@@ -9,11 +9,53 @@ mixin mob-mnu()
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy&attributes(attributes)
-		.container
-			.row
-				.col-auto.d-lg-none
+		.container-lg
+			+e.row.row.align-items-center
+				.col-auto
+					+e.PICTURE.logo
+						source(srcset="img/svg/logo.svg"  media="(min-width:576px)")
+						img(loading="lazy" src="img/svg/logo-sm.svg" alt="")
+				.col-auto.align-self-start
+					+e.since-row.row
+						.col-auto
+							+e.flag 4,8
+						.col
+							+e.stars
+								-for(var i = 0; i < 5; i++)
+									+icon('star')
+							+e.s-txt
+								b Работаем с 2006 года.
+								|
+								| Рейтинг на основании 180 отзывов
+				+topNavInfoItem('location')
+					| Москва, Алтуфьевское ш., д. 48, корп. 1
+				+topNavInfoItem('clock')
+					| пн–пт: 9:30–19:00
+					br
+					| сб–вс: выходной
+				.col.text-end.d-none.d-sm-block
+					+e.mail(href="mailto:mail@orgdoc.ru") mail@orgdoc.ru
+					div
+						+e.tell(href="telto:+74959713971") +7 (495) 971-39-71
+				.col-auto.d-none.d-md-block
+					+e.callback-btn(href="#") Обратный звонок
+				.col-auto.d-md-none.ms-auto
+					+e.wa-btn
+						img(loading="lazy" src="img/svg/wa.svg" alt="")
+				//-.col-auto.d-lg-none
 					+b.toggle-menu-mobile--js
 						span
-				.col.d-none.d-lg-block
+				//-.col.d-none.d-lg-block
 					+mnu()
 	// end top-nav
+
+mixin topNavInfoItem(iconName)
+	.col-auto.d-none.d-lg-block
+		+e.ball-row.row
+			.col-auto
+				+e.ball
+					//-+icon(iconName)
+					img(loading="lazy" src=`img/svg/${iconName}.svg` alt="")
+			.col
+				+e.txt
+					block

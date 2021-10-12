@@ -1,10 +1,38 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.SECTION.headerBlock.section#headerBlock&attributes(attributes)
+		+pic('headerBlock-bg.jpg')(class="headerBlock__bg")
+		+pic('headerBlock-paper.png')(class="headerBlock__paper d-none d-lg-block")
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+b.section-title
+				h1
+					| Разработка ППР
+					|
+					| для&#160;
+					span любого вида
+					|
+					| строительных работ
+			+e.row.row
+				.col-6.col-md-auto.order-first.order-md-0
+					+headerBlockItem('Цены', 'от 15 000 ₽')
+				.col-sm-6.col-md-auto
+					+headerBlockItem('Доработки', 'без ограничений')
+				.col-6.col-md-auto.order-first.order-md-0
+					+headerBlockItem('Сроки', '2–3 дня')
+				.col-sm-6.col-md-auto
+					+headerBlockItem('Предоплата', 'Без предоплаты')
+			.text-center.text-md-start
+				+e.btn(href="#")
+					img(loading="lazy" src="img/svg/calc.svg" alt="")
+					span Рассчитать стоимость
 	// end headerBlock
+
+mixin headerBlockItem(gray, txt)
+	+e.item
+		+e.i-row.row.align-items-center
+			.col-auto
+				+e.ball
+					img(loading="lazy" src="img/svg/check-ball.svg" alt="")
+			.col
+				+e.gray=gray
+				+e.txt=txt

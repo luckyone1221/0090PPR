@@ -1,8 +1,62 @@
 // start .topLine
 .topLine {
+	&__slider-wrap{
+		@include media-breakpoint-up(lg){
+			padding: rem(15) rem(30);
+		}
+		@include media-breakpoint-up(xl){
+			padding: rem(14) rem(30);
+		}
 
-	&__{}
-	&__{}
+
+		@include media-breakpoint-up(lg){
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		.swiper{
+			overflow: visible!important;
+			@include mt();
+		}
+		.swiper-wrapper{
+			@include media-breakpoint-up(lg){
+				justify-content: space-between!important;
+				flex-wrap: nowrap!important;
+				width: 100% !important;
+				transform: none!important;
+			}
+		}
+		.swiper-slide{
+			width: auto;
+
+			margin-right: 10px;
+			@include media-breakpoint-up(lg){
+				margin-right: 0;
+			}
+		}
+	}
+	&__item{
+		@extend .btn;
+		@extend .btn-white;
+		padding: 6px 21.5px;
+		color: $black!important;
+		font-size: 14px;
+		line-height: calc(16/14);
+
+		@include media-breakpoint-up(lg){
+			padding: 0!important;
+			border: none!important;
+			box-shadow: none!important;
+			background-color: transparent!important;
+
+			font-size: rem(16);
+			line-height: calc(19/16);
+			color: $white!important;
+			&:hover{
+				color: $primary!important;
+			}
+		}
+	}
 	&__{}
 	&__{}
 } // end.topLine

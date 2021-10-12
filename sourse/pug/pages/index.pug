@@ -6,20 +6,17 @@ include ../blocks/sContact/_sContact.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg="index.png"
+	- let  bg="01-375.png"
 
 block title
 	- let  title= 'title'
 	title= title
 block pagecontent
-	+mob-mnu()
+	//-+mob-mnu()
 	+header()
 		+top-nav()
-		//-+topLine()
+		+topLine()
 	+headerBlock()
 	//+sForm()
 	//+sContact()
 	+footer()
-
-
-

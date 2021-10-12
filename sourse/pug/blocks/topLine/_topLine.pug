@@ -1,9 +1,20 @@
 mixin topLine()
 	// start topLine
-	+b.SECTION.topLine.section#topLine&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+	+b.topLine#topLine&attributes(attributes)
+		.container-lg
+			+e.slider-wrap
+				.swiper.menu-slide-js
+					.swiper-wrapper
+						+topLineSlide('Услуги')
+						+topLineSlide('Выполненые проекты')
+						+topLineSlide('Калькулятор')
+						+topLineSlide('Отзывы')
+						+topLineSlide('Сертификаты')
+						+topLineSlide('Новости')
+						+topLineSlide('Контакты')
+
 	// end topLine
+
+mixin topLineSlide(txt, href="#")
+	.swiper-slide
+		+e.item(href=href)=txt
