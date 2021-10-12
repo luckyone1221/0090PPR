@@ -113,13 +113,13 @@ $theme-colors: (
   "dark": $dark) !default;
 // scss-docs-end theme-colors-map
 
-$theme-colors: map-remove($theme-colors, 
-"info", 
-"light", 
-"dark",  
-"success",
-'warning', 
-);
+//$theme-colors: map-remove($theme-colors,
+//"info",
+//"light",
+//"dark",
+//"success",
+//'warning',
+//);
 
 // scss-docs-start theme-colors-rgb
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
