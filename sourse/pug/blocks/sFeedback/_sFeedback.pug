@@ -1,0 +1,19 @@
+mixin sFeedback(data)
+	// start sFeedback
+	+b.SECTION.sFeedback--js.section#sFeedback&attributes(attributes)
+		+pic('sFeedback-bg.png')(class="sFeedback__bg")
+		.container
+			+b.section-title.text-center
+				h2 Отзывы клиентов на&#160;бланках
+			+g.sOpen
+				+e.slider-wrap
+					.swiper.sFeedback-slider-js
+						.swiper-wrapper
+							-for (var i = 0; i < 5; i++)
+								+sOpenSlide(i)
+						.d-none.d-xl-block
+							+arrow()
+					.swiper-pagination
+
+
+	// end sFeedback

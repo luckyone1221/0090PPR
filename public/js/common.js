@@ -236,14 +236,19 @@ function eventHandler() {
 	//luckyOne Js
 	let headerH;
 	let header = document.querySelector(".header--js");
+	let fixedHeader = document.querySelector(".fixed-line--js");
 	function calcHeaderHeight() {
+		if (!header) return;
 		document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`);
 		headerH = header.offsetHeight;
 
-		if (!header) return;
 		window.scrollY > 0
 			? header.classList.add('fixed')
 			: header.classList.remove('fixed');
+
+		window.scrollY > 1000
+			? fixedHeader.classList.add('active')
+			: fixedHeader.classList.remove('active');
 	}
 	window.addEventListener('resize', calcHeaderHeight, { passive: true });
 	window.addEventListener('scroll', calcHeaderHeight, { passive: true });
@@ -265,9 +270,6 @@ function eventHandler() {
 			el: ' .swiper-pagination',
 			type: 'bullets',
 			clickable: true,
-			// renderBullet: function (index, className) {
-			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
-			// }
 		},
 	}
 	let freeMomentum = {
@@ -316,6 +318,100 @@ function eventHandler() {
 	}
 	makeDDGroup();
 	//
+	let sliders = document.querySelectorAll('.menu-slide-js');
+	for (let slider of sliders){
+		let menuSlider = new Swiper(slider, {
+			observer: true,
+			observeParents: true,
+			slidesPerView: 'auto',
+			spaceBetween: 10,
+		});
+	}
+
+	let sMadeSlider = new Swiper('.sMade-slider-js', {
+		breakpoints: {
+			0: {
+				spaceBetween: 30,
+			},
+			1200: {
+				spaceBetween: 90,
+			},
+		},
+
+		lazy: {
+			loadPrevNext: true,
+		},
+		loop: true,
+
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+	//-
+	let sSpecSlider = new Swiper('.sSpec-slider-js', {
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		lazy: {
+			loadPrevNext: true,
+		},
+		loop: true,
+
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+
+	//-
+	let sOpenSlider = new Swiper('.sOpen-slider-js', {
+		watchOverflow: true,
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		lazy: {
+			loadPrevNext: true,
+			loadPrevNextAmount: 10,
+		},
+		loop: true,
+
+		//-
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.sOpen--js .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
+	let sFeedbackSlider = new Swiper('.sFeedback-slider-js', {
+		watchOverflow: true,
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		lazy: {
+			loadPrevNext: true,
+			loadPrevNextAmount: 10,
+		},
+		loop: true,
+
+		//-
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.sFeedback--js .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	});
 
 	//end luckyOne Js
 

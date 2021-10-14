@@ -2,9 +2,9 @@ mixin topLine()
 	// start topLine
 	+b.topLine#topLine&attributes(attributes)
 		.container-lg
-			+e.slider-wrap
+			+b.menu
 				.swiper.menu-slide-js
-					.swiper-wrapper
+					ul.swiper-wrapper
 						+topLineSlide('Услуги')
 						+topLineSlide('Выполненые проекты')
 						+topLineSlide('Калькулятор')
@@ -12,9 +12,29 @@ mixin topLine()
 						+topLineSlide('Сертификаты')
 						+topLineSlide('Новости')
 						+topLineSlide('Контакты')
+	+b.fixed-line--js
+		.container-lg
+			.row.align-items-center
+				.col-lg
+					+b.menu
+						.swiper.menu-slide-js
+							ul.swiper-wrapper
+								+topLineSlide('Услуги')
+								+topLineSlide('Выполненые проекты')
+								+topLineSlide('Калькулятор')
+								+topLineSlide('Отзывы')
+								+topLineSlide('Сертификаты')
+								+topLineSlide('Новости')
+								+topLineSlide('Контакты')
+				.col-auto.d-none.d-lg-block.text-end
+					+e.mail(href="mailto:mail@orgdoc.ru") mail@orgdoc.ru
+					div
+						+e.tell(href="telto:+74959713971") +7 (495) 971-39-71
+				.col-auto.d-none.d-lg-block
+					+e.callback-btn(href="#") Обратный звонок
 
 	// end topLine
 
 mixin topLineSlide(txt, href="#")
-	.swiper-slide
+	li.swiper-slide
 		+e.item(href=href)=txt

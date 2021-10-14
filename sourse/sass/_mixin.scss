@@ -240,6 +240,10 @@
   transform: none!important;
   width: calc(100% + var(--bs-gutter-x, 0px)) !important;
   max-width: calc(100% + var(--bs-gutter-x, 0px)) !important;
+
+  .swiper-slide-duplicate{
+    display: none!important;
+  }
 }
 
 @mixin sw-col(){

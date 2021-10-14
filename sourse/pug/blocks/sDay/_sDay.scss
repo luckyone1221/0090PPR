@@ -1,0 +1,255 @@
+// start .sDay
+.sDay {
+	margin-top: -10px;
+	--sPT: #{rem(78)};
+	--sPB: #{rem(91)};
+	--sTPB: #{rem(34)};
+	@include media-breakpoint-up(md){
+		margin-top: 0;
+		--sPT: #{rem(100)};
+		--sPB: #{rem(82)};
+		--sTPB: #{rem(47)};
+	}
+
+	position: relative;
+	z-index: 2;
+	&__bg{
+		pointer-events: none;
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+		@include media-breakpoint-up(xl){
+			height: calc(100% + #{rem(167)});
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: bottom center;
+		}
+	}
+
+	//-
+	&__img{
+		position: absolute;
+		left: rem(-10);
+
+		top: rem(177);
+		width: calc(#{rem(775)} * 0.8);
+		height: calc(#{rem(905)} * 0.8);
+		@include media-breakpoint-up(base){
+			top: rem(77);
+			width: rem(775);
+			height: rem(905);
+		}
+		max-height: calc(100% - #{rem(70)});
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__sub-row{
+		padding-bottom: rem(30);
+		@include media-breakpoint-up(sm){
+			padding-bottom: rem(34);
+		}
+	}
+	.section-title{
+		position: relative;
+		z-index: 2;
+
+		padding-bottom: 0;
+		h2{
+			font-weight: 400;
+			color: $white;
+
+			font-size: rem(32);
+			@include media-breakpoint-up(lg){
+				font-size: rem(32);
+			}
+
+			span{
+				display: block;
+
+				line-height: 1.1;
+				font-weight: bold;
+
+				margin-bottom: rem(12);
+				font-size: rem(70);
+				@include media-breakpoint-up(lg){
+					margin-bottom: 8px;
+					font-size: rem(100);
+				}
+			}
+
+		}
+	}
+
+	//-
+	&__green{
+		max-width: rem(370);
+		position: relative;
+		z-index: 1;
+		margin: calc(var(--sPT)*-1 + 1px) 0 -80px auto;
+
+		padding: rem(24) rem(20) rem(94) rem(20);
+		@include media-breakpoint-up(lg){
+			padding: rem(24) rem(40) rem(94) rem(35);
+		}
+		//-
+
+		font-size: rem(14);
+		line-height: 1.35;
+		color: $white;
+
+		p{
+
+		}
+		& > *:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__green-bg{
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		img{
+			width: 100%;
+			height: 100%;
+			filter: drop-shadow(0 rem(8) rem(15) rgba(19, 21, 26, 0.1));
+		}
+	}
+	//
+	&__items-row{
+		--bs-gutter-x: #{rem(10)};
+		--bs-gutter-y: #{rem(12)};
+		@include media-breakpoint-up(sm){
+			--bs-gutter-x: #{rem(20)};
+			--bs-gutter-y: #{rem(20)};
+		}
+		@include media-breakpoint-up(xl){
+			--bs-gutter-x: #{rem(30)};
+			--bs-gutter-y: #{rem(26)};
+		}
+		counter-reset: list 0;
+	}
+	&__col{
+		&:nth-child(1){
+			--title-mw: #{rem(207)};
+			--descr-mw: #{rem(303)};
+		}
+		&:nth-child(2){
+			--title-mw: #{rem(287)};
+			--descr-mw: #{rem(187)};
+		}
+		&:nth-child(3){
+			--title-mw: #{rem(126)};
+			--descr-mw: #{rem(154)};
+		}
+		&:nth-child(4){
+			--title-mw: #{rem(318)};
+			--descr-mw: #{rem(188)};
+		}
+		&:nth-child(5){
+			--title-mw: #{rem(207)};
+			--descr-mw: #{rem(261)};
+			@include media-breakpoint-up(sm){
+				--descr-mw: #{rem(325)};
+			}
+		}
+		&:nth-child(6){
+			--title-mw: #{rem(207)};
+			--descr-mw: #{rem(303)};
+		}
+		&:nth-child(7){
+			--title-mw: #{rem(100)};
+
+			--descr-mw: #{rem(286)};
+			@include media-breakpoint-up(sm){
+				--descr-mw: #{rem(543)};
+			}
+		}
+
+		&:last-child{
+			width: 100% !important;
+		}
+	}
+	&__item{
+		min-height: 100%;
+		padding: rem(20);
+		@include media-breakpoint-up(sm){
+			padding: rem(20);
+		}
+		@include media-breakpoint-up(xl){
+			padding: rem(20) rem(27);
+		}
+		background: $white;
+		box-shadow: 0 rem(8) rem(15) rgba(19, 21, 26, 0.1);
+		border-radius: rem(15);
+
+		position: relative;
+		z-index: 1;
+		&:before{
+			counter-increment: list;
+			content: "0"counter(list);
+			position: absolute;
+			z-index: -1;
+
+			top: 50%;
+			transform: translateY(-50%);
+			right: rem(33);
+
+
+			font-weight: bold;
+			color: transparent;
+			font-size: rem(100);
+			line-height: 1;
+			-webkit-text-stroke: 3px rgba(#C4C4C4, .2);
+			//-text-shadow: 0 0 3px rgba(#C4C4C4, .2);
+		}
+	}
+	&__title-wrap{
+		margin-bottom: rem(5);
+		@include media-breakpoint-up(xl){
+			min-height: rem(42);
+		}
+
+		display: flex;
+		align-items: flex-end;
+	}
+	&__title{
+		max-width: var(--title-mw, 100%);
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: calc(21/18);
+
+		a{
+			color: $primary!important;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	&__descr{
+		font-size: rem(16);
+		line-height: calc(19/16);
+		color: rgba($black, .5);
+		max-width: var(--descr-mw, 100%);
+	}
+	&__{}
+	&__{}
+	&__{}
+} // end.sDay

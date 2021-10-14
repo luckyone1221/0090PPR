@@ -1,0 +1,64 @@
+mixin sDay(data)
+	// start sDay
+	+b.SECTION.sDay.section#sDay&attributes(attributes)
+		+e.PICTURE.bg
+			source(type="image/webp" srcset="img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)")
+			source(type="image/webp" srcset="img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)")
+			img(loading="lazy" src="img/@2x/sCategory-bg.png")
+		//-pic dont work( no visisible img), lazy dont work too
+		//-+pic('sDay-img.png')(class="sDay__img d-none d-xl-block")
+		+e.img.d-none.d-xl-block
+			img(src="img/@2x/sDay-img.png" alt="")
+		.container
+			+e.row.row
+				.col-xl-8.ms-auto
+					+e.sub-row.row
+						.col-md-6
+							+b.section-title.text-center.text-md-start
+								h2
+									span 2 дня
+									| В среднем уходит на&#160;производство&#160;ППР
+						.col-md-6.d-none.d-md-block
+							+e.green
+								+e.green-bg
+									img(loading="lazy" src="img/svg/sDay-green.svg" alt="")
+								p
+									b Доставка ППР бесплатно
+									|
+									| при любой сумме заказа по Москве и области
+								p
+									| Вы можете вносить
+									|
+									b неограниченное число доработок
+									|
+									| в процессе разработки ППР
+								p
+									b Соблюдение строительных правил,
+									|
+									| МДС, ГОСТ и  СП 48.13330.2019 «Организация строительства»
+					+e.items-row.row
+						+sDayItem('Вы взаимодействуете не с менеджером, а с компетентным инженером')
+							a(href="#") Заявка на сайте
+							|
+							|, в офисе или по телефону
+						+sDayItem('определяет вид работ и сложность разработки')
+							| Главный инженер оценивает объем ППР (ППРк),
+						+sDayItem('исходных данных, выезд на объект')
+							| Подробный анализ
+						+sDayItem('по ОДД, ПОС, обследованию')
+							| При необходимости задействуем штатных специалистов
+						+sDayItem('перечнем необходимых исходных данных и точными сроками проектирования')
+							| КП с объемами работ, составом ППР,
+						+sDayItem('Начало разработки ППР')
+							| Готовим договор и техническое задание
+						+sDayItem('Главный инженер проверяет проект на соответствие исходным данным, технике безопасности, нормам проектирования.')
+							| Завершение.
+	// end sDay
+
+mixin sDayItem(descr)
+	+e.col.col-md-6
+		+e.item
+			+e.title-wrap
+				+e.title
+					block
+			+e.descr=descr

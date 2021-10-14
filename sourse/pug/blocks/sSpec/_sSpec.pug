@@ -1,0 +1,39 @@
+mixin sSpec(data)
+	// start sSpec
+	+b.SECTION.sSpec.section#sSpec&attributes(attributes)
+		+e.PICTURE.bg
+			source(type="image/webp" srcset="img/@2x/webp/sSpec-bg.webp" media="(min-width:576px)")
+			source(type="image/webp" srcset="img/@2x/webp/sSpec-bg-mob.webp" media="(max-width:576px)")
+			img(loading="lazy" src="img/@2x/sSpec-bg.png")
+		.container
+			+b.section-title.text-center
+				h2
+					| Над каждым ППР работает
+					|
+					span 6&#160;специалистов
+			+e.slider-wrap
+				.swiper.sSpec-slider-js
+					.swiper-wrapper
+						+sSpecSlide('Главный инженер проекта')
+						+sSpecSlide('Инженер проектировщик ОДД', 'Разрабатывает ППР для работ с выходом на проезжую часть или тротуар, например, при прокладке наружных сетей и строительных лесов')(class="d-none d-sm-flex")
+						+sSpecSlide('Главный инженер проекта')(class="d-none d-sm-flex")
+						+sSpecSlide('Главный инженер проекта')
+						+sSpecSlide('Главный инженер проекта')
+						+sSpecSlide('Главный инженер проекта')
+					.swiper-pagination.d-md-none
+			.text-center
+				+e.btn(href="#")
+					img(loading="lazy" src="img/svg/calc.svg" alt="")
+					span Рассчитать стоимость
+	// end sSpec
+
+mixin sSpecSlide(duty, descr='Отвечает за проект на выходе, проверяет на соответствие нормам, ГОСТ, СП и технике безопасности')
+	.swiper-slide&attributes(attributes)
+		+e.card-wrap
+			+e.card
+				+e.top-row.row.align-items-center
+					.col-auto
+						+e.img
+							img(loading="lazy" src="img/svg/user-stab.svg" alt="")
+					+e.name-col.col=duty
+				+e.descr=descr

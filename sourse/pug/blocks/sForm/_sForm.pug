@@ -1,9 +1,46 @@
 mixin sForm()
 	// start sForm
-	+b.SECTION.sForm.section#sForm&attributes(attributes)
+	+b.SECTION.sForm.section&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
-				
-			.row
+			+e.box-wrap
+				+e.box
+					+b.section-title.text-center.text-md-start
+						h2
+							| Заказать ППР на
+							|
+							span монолитные работы
+					+e.search-box
+						+e.input-wrap
+							+e.INPUT.input.form-control(type="text" name="search" placeholder="Введите свой ППР в поиск")
+							+e.btn(type="submit") Найти ППР
+						+e.result-row.row.d-none.d-md-flex
+							+sFormResultItem('Найдено результатов:', '2')
+							+sFormResultItem('Категорий ППР:', '23')
+							+sFormResultItem('Видов ППР:', '12 834')
+						+e.head-row.row.align-items-center
+							+e.for-col.col-md.text-center.text-md-start ППР для…
+							.col-md-auto.d-none.d-md-block
+								+e.show-more(href="#")
+									+icon('reload')
+									+e.SPAN.sm-txt Показать больше
+						+e.items.text-center.text-md-start
+							+sFormItem('электромонтажных работ')
+							+sFormItem('кровельных работ', 'd-none d-md-block')
+						.text-center.d-md-none
+							+e.show-more(href="#")
+								+icon('reload')
+								+e.SPAN.sm-txt Показать больше
 	// end sForm
+
+mixin sFormItem(title, addClasses='')
+	+e.item(class=addClasses)
+		+e.i-row.row.align-items-center
+			+e.i-title.col-md=title
+			+e.i-price.col-md-auto от 15 000 ₽
+			.col-md-auto
+				+e.i-btn(href="#") Заказать ППр
+
+mixin sFormResultItem(key, val)
+	.col-auto
+		+e.key=key
+		+e.val=val

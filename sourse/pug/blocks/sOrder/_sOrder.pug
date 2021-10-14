@@ -1,0 +1,92 @@
+mixin sOrder(data)
+	// start sOrder
+	+b.SECTION.sOrder.section#sOrder&attributes(attributes)
+		if data.pencil
+			+pic('sOrder-pencil.png')(class="sOrder__bg d-none d-xl-flex")
+		.container
+			+e.row.row
+				.col-lg-7
+					+b.section-title.text-center.text-lg-start
+						h2
+							if block
+								block
+							else
+								| Закажите ППР
+								|
+								span на&#160;любой&#160;вид
+								|
+								| строительных работ
+						p Мы сделаем любой строительный ППР или&#160;(ППРк) от 15 000 ₽ за 2–3 дня.
+					+e.items
+						+sOrderItem([{
+							title: 'Разработка ППР на любой вид работ',
+							descr: 'из 23 категорий и 12 834 видов работ',
+						}], undefined, true)
+						+sOrderItem([
+							{
+								title: 'Цены',
+								descr: 'от 15 000 ₽',
+							}, {
+								title: 'Доработки',
+								descr: 'без ограничений',
+							}, {
+								title: 'Сроки',
+								descr: '2–3 дня',
+							}, {
+								title: 'Предоплата',
+								descr: '0 ₽',
+							},
+						], 'd-none d-lg-block item-inverse')
+						+sOrderItem([{
+							title: `Скидка 15% в день заказа`,
+							descr: 'на ваш первый ППР или ППРк',
+						}], undefined, true)
+					+e.item.green-item.d-lg-none
+						+ItemRow('Цены', 'от 15 000 ₽')
+						+ItemRow('Доработки', 'без ограничений')
+						+ItemRow('Сроки', '2–3 дня')
+						+ItemRow('Предоплата', '0 ₽')
+				.col-lg-5
+					+form-wrap()
+						+e.box
+							.text-center
+								+e.title
+									| Перезвоним через
+									|
+									span 5–7 минут
+								+e.sm-txt Заполните форму:
+							+e.inputs
+								+input('Какой ППР вам нужен?', 'text')
+								+input('На какой телефон перезвонить?', 'tell')
+								+input('Как вас зовут?', 'text')
+							+e.btn(type="submit") Заказать ппр со скидкой 15%
+						+e.green-box
+							+e.g-row.row.align-items-center.justify-content-center
+								+e.g-val.col-auto 15%
+								+e.g-txt.col-auto Скидка на 1-й ППР или ППРк
+	// end sOrder
+
+mixin sOrderItem(arr, addClasses='', duplicate)
+	+e.item(class=addClasses)
+		+e.i-row.row
+			.col-auto
+				+e.ball
+					+icon('check')
+			.col
+				+e.sub-row.row
+					- for (var i = 0; i < arr.length; i++)
+						.col-auto
+							+e.title=arr[i].title
+							+e.descr(class=`${duplicate ? 'd-none d-sm-block' : ''}`)=arr[i].descr
+			if duplicate
+				.col-12.d-sm-none
+					+e.descr=arr[0].descr
+
+mixin ItemRow(title, descr)
+	+e.i-row.row
+		.col-auto
+			+e.ball
+				+icon('check')
+		.col
+			+e.title!=title
+			+e.descr=descr

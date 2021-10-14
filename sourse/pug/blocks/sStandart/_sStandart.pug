@@ -1,0 +1,41 @@
+mixin sStandart(data)
+	// start sStandart
+	+b.SECTION.sStandart.section#sStandart&attributes(attributes)
+		+pic('sStandart-bg.png')(class="sStandart__bg d-none d-lg-block")
+		.container
+			+e.row.row
+				.col-lg-7.col-xl-8
+					+b.section-title.text-center.text-lg-start
+						h2
+							| ППР и ППРк по строительным
+							|
+							span стандартам
+						p Строго соблюдаем строительные правила, МДС, ГОСТ и СП 48.13330.2019 «Организация строительства»
+					+e.items-row.row
+						+sStandartItem('Техкарты на каждый вид работ', 'Разрабатываются на отдельные виды работ с целью внедрения передовых методов строительства')
+						+sStandartItem('Календарное планирование', 'Устанавливает целесообразную последовательность, взаимную увязку и сроки выполнения работ')
+						+sStandartItem('Схемы размещения знаков с геодезической информацией', 'Необходимое условие своевременного и качественного выполнения геодезических работ на стройплощадке')
+						+sStandartItem('Технологические графики', 'Поставок стройконструкций, оборудования и материалов, маршрутов передвижения рабочих и механизмов в пределах объекта')
+						+sStandartItem('Пояснительные записки', 'В соответствии с типом объекта строительства, видами работ, технической сложностью проекта и прочими данными')
+						+sStandartItem('Стройгенплан', 'Регламентирует организацию труда на строительной площадке и объемы временного строительства')
+					//remove d-none d-sm-block, love pp
+					+e.btn.d-none.d-sm-block(href="#") Заказать ппр по строительным стандартам
+				.col-lg
+					+e.ball
+						+e.b-light--top И еще
+						+e.b-val 56
+						+e.b-light--bot параметров
+						+e.b-txt В зависимости от требуемого вами вида ППР
+			+pic('sStandart-paper.png')(class="sStandart__paper")
+	// end sStandart
+
+mixin sStandartItem(title, descr)
+	.col-md-6
+		+e.item
+			+e.i-row.row.align-items-center
+				.col-auto
+					+e.i-ball
+						img(loading="lazy" src="img/svg/check-ball.svg" alt="")
+				.col
+					+e.i-title=title
+			+e.descr=descr

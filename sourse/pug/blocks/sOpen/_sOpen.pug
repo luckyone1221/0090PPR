@@ -1,0 +1,38 @@
+mixin sOpen(data)
+	// start sOpen
+	+b.SECTION.sOpen--js.section#sOpen&attributes(attributes)
+		+e.container.container
+			+e.bg.d-none.d-xl-block
+				img(loading="lazy" src="img/@2x/sOpen-img.png" alt="")
+			+b.section-title
+				p О компании «С-Проджект»
+				h2
+					| Мы открылись не «вчера» и
+					|
+					span не закроемся «завтра»
+					|
+					| — поэтому нам доверяют
+				p Работаем с 2006 года, что подтверждается сертификатами, полученными в этот период. Разработали ППР и ППРк для известных компаний, среди которых: «Мерседес», «Сбербанк», «Аэрофлот» и еще порядка 20 топовых брендов. Не стремимся работать только с лидерами рынка, просто за 15 лет нас сложно было не заметить и не прийти к нам. Если вы из малого и среднего бизнеса, то вас мы ждем не меньше — наши цены вам понравятся.
+				p Вам стоит выбрать нас, потому что мы гарантируем вам ППР и ППРк, сделанный по строительным стандартам. Мы будем работать над вашим ППР до полного утверждения. Компания, к результатам работы которой у вас не будет вопросов — это мы.
+			+e.cert-title
+				span Лицензии
+				|
+				| на осуществление деятельности, начиная с дня основания и по сегодняшний день
+			+e.slider-wrap
+				.swiper.sOpen-slider-js
+					.swiper-wrapper
+						-for(var i = 0; i < 5; i++)
+							+sOpenSlide(i)
+					.d-none.d-xl-block
+						+arrow()
+				.swiper-pagination
+	// end sOpen
+
+mixin sOpenSlide(id)
+	.swiper-slide
+		+e.card-wrap
+			+e.card
+				//-dont place pic!!! loading="lazy" broken
+				//-fancy broke too (href=`img/@2x/sOpen-cert.png` data-fancybox=`sOpenSlide${id}`)
+				+e.img
+					img.swiper-lazy(src="" data-src="img/@2x/sOpen-cert.png" alt="")

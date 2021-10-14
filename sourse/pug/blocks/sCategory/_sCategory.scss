@@ -1,0 +1,235 @@
+// start .sCategory
+.sCategory {
+	--sPT: #{rem(82px)};
+	--sPB: #{rem(99)};
+	--sTPB: #{rem(34)};
+	@include media-breakpoint-up(md){
+		--sPT: #{rem(100)};
+		--sPB: #{rem(103)};
+		--sTPB: #{rem(47)};
+	}
+
+	position: relative;
+	z-index: 1;
+	&__bg{
+		pointer-events: none;
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top center;
+		}
+	}
+	&__pic{
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+
+		&--pencil{
+			bottom: rem(-63);
+			top: unset;
+			left: rem(-96);
+
+			@include media-breakpoint-up(sm){
+				bottom: -80px;
+				top: unset;
+				left: rem(-80);
+			}
+			@include media-breakpoint-up(xxl){
+				bottom: unset;
+				top: rem(453);
+				left: rem(-10);
+			}
+			width: rem(326);
+			height: rem(350);
+		}
+		&--paper{
+			top: rem(419);
+			right: rem(-10);
+			width: rem(334);
+			height: rem(471);
+		}
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.section-title{
+		@include media-breakpoint-up(xl){
+			padding-left: rem(23);
+		}
+		h2{
+			color: $white;
+			line-height: 1.2;
+
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 90%;
+			@include media-breakpoint-up(sm){
+				max-width: 100%;
+			}
+
+			font-size: rem(32);
+			margin-bottom: rem(15);
+			@include media-breakpoint-up(xl){
+				font-size: rem(60);
+				margin-bottom: rem(10);
+			}
+		}
+		p{
+			line-height: 1.35;
+			color: $white;
+
+			@include media-breakpoint-up(sm){
+				font-size: rem(18);
+			}
+			@include media-breakpoint-up(md){
+				max-width: 833px;
+				margin-left: auto;
+				margin-right: auto;
+
+				font-family: $mono;
+				font-size: rem(24);
+			}
+
+			span{
+				@include media-breakpoint-up(md){
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	&__row{
+		--bs-gutter-x: #{rem(20)};
+		--bs-gutter-y: #{rem(20)};
+		padding-bottom: rem(40);
+		@include media-breakpoint-up(xl){
+			--bs-gutter-x: #{rem(30)};
+			--bs-gutter-y: #{rem(30)};
+			padding: 0 rem(10) rem(50) rem(5);
+
+			//col
+			& > *{
+				&:nth-child(6n + 3),
+				&:nth-child(6n + 4){
+					width: 50% !important;
+				}
+			}
+		}
+	}
+	&__col{
+		display: flex;
+		flex-direction: column;
+	}
+	--item-padd: #{rem(25)};
+	&__item{
+		flex-grow: 1;
+		width: 100%;
+		min-height: rem(265);
+		border-radius: rem(8);
+		overflow: hidden;
+
+		position: relative;
+		z-index: 1;
+
+		padding: var(--item-padd);
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__img{
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($black, .4);
+		}
+	}
+	&__title{
+		max-width: rem(171);
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: 1.05;
+		color: $white;
+	}
+	&__price{
+		width: auto;
+		margin: auto 0 rem(20) calc(var(--item-padd) * -1);
+		padding: rem(7.5) rem(20)	rem(7.5) var(--item-padd);
+
+		color: $white;
+		background: $primary;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		font-weight: 600;
+		font-size: rem(14);
+		line-height: 1.05;
+		border-radius: 0 rem(8) rem(8) 0;
+	}
+	&__i-btn{
+		@extend .btn-white-blue;
+		padding: rem(15.5);
+		width: 100%;
+		@include media-breakpoint-up(lg){
+			width: rem(215);
+			max-width: 100%;
+		}
+
+		font-weight: 600;
+		font-size: rem(14);
+		line-height: calc(17/14);
+		letter-spacing: rem(0.5);
+		text-transform: uppercase;
+	}
+
+	&__btn{
+		@extend .btn-green;
+		text-transform: uppercase;
+		color: $white!important;
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: rem(28);
+
+		.icon{
+			@include media-breakpoint-down(sm){
+				display: none;
+			}
+
+			font-size: rem(24);
+			margin-right: rem(13.5);
+			color: $white;
+		}
+	}
+	&__{}
+} // end.sCategory

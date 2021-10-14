@@ -1,0 +1,49 @@
+mixin sMade(data)
+	// start sMade
+	+b.SECTION.sMade.section#sMade&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2
+					| Нами разработано
+					|
+					span 4800 ППР с 2006 года
+			+e.slider-wrap
+				.swiper.sMade-slider-js
+					.swiper-wrapper
+						//-+sMadeSlide(2)
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aut dolor illo neque nostrum omnis perspiciatis quisquam reiciendis sed voluptas. Accusamus dolores eius enim facere, incidunt ipsam iure labore laboriosam natus quam recusandae rem, reprehenderit sequi veniam veritatis vero voluptatibus. Aperiam atque autem commodi corporis culpa cupiditate deserunt error excepturi exercitationem expedita explicabo fugit id, iste iure non placeat quam qui, quidem quo quod rem repellat voluptatibus. Accusantium, adipisci dicta dignissimos dolor dolorum ea est iste magni molestiae nisi omnis, provident qui quos ratione tempora veniam voluptate voluptates. A accusantium adipisci alias assumenda atque blanditiis cum debitis dolorem eligendi ex explicabo hic ipsum magni molestiae nam nesciunt, odio perspiciatis praesentium qui quis quod, repudiandae suscipit tenetur? Autem consequuntur culpa dolorem, doloribus facilis fugiat modi natus obcaecati officiis placeat possimus praesentium quas quis suscipit, velit, voluptas voluptates! Adipisci assumenda aut esse! A cumque dolores error ex, ipsa iure laudantium nam optio quae quia, quidem quos unde veritatis vitae voluptas voluptatem voluptatum. Amet at eum nihil tempore voluptates! Aspernatur et fuga modi rem repudiandae. Ad aliquam amet assumenda aut culpa ducimus ea enim illo iusto magni maxime minus modi, molestiae nobis, nostrum rem sed sequi velit veritatis vitae! In maxime quos ullam veritatis.
+						-for(var i =0; i < 5; i++)
+							+sMadeSlide(1)
+					.swiper-pagination
+
+	// end sMade
+
+mixin sMadeSlide(imgNum)
+	.swiper-slide
+		+e.item-wrap
+			+e.item
+				+e.i-row.row.justify-content-center
+					+e.col--img.col-md-9.col-lg-6.col-xl-auto
+						+e.link(href=`img/@2x/sMadeSlide-${imgNum}.png` data-fancybox="sMadeSlide")
+							+pic(`sMadeSlide-${imgNum}.png`)(class='sMade__img')
+							+e.btn-pl
+								//-img(loading="lazy" src="img/svg/zoom-pl.svg" alt="")
+								+icon('zoom-pl')
+					+e.col--content.col-lg-6.col-xl.text-center.text-lg-start
+						block
+						+e.title Проект производства работ  для электромонтажа
+						+e.client Клиент: ООО «ПромТоргСтрой»
+						+e.b-row.row.justify-content-lg-start.justify-content-center
+							.col-12
+								+e.difficulty
+									+e.d-txt Сложность
+									+e.d-stars
+										-for(var i = 0; i < 2; i++)
+											+icon('star')
+							+sMadeSlideBlue('7 листов графической части')
+							+sMadeSlideBlue('230 страниц')
+						+e.btn(href="#") Узнать стоимость такого ппр
+
+mixin sMadeSlideBlue(txt)
+	.col-md-auto
+		+e.blue=txt

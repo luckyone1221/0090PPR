@@ -1,6 +1,7 @@
 // start .topLine
 .topLine {
-	&__slider-wrap{
+
+	.menu{
 		@include media-breakpoint-up(lg){
 			padding: rem(15) rem(30);
 		}
@@ -19,6 +20,10 @@
 			@include mt();
 		}
 		.swiper-wrapper{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
 			@include media-breakpoint-up(lg){
 				justify-content: space-between!important;
 				flex-wrap: nowrap!important;
@@ -31,32 +36,202 @@
 
 			margin-right: 10px;
 			@include media-breakpoint-up(lg){
-				margin-right: 0;
+				margin-right: 0!important;
+			}
+
+			a{
+				@extend .btn;
+				@extend .btn-white;
+				padding: 6px 21.5px;
+				color: $black!important;
+				font-size: 14px;
+				line-height: calc(16/14);
+
+				@include media-breakpoint-up(lg){
+					padding: 0!important;
+					border: none!important;
+					box-shadow: none!important;
+					background-color: transparent!important;
+
+					font-size: rem(16);
+					line-height: calc(19/16);
+					color: $white!important;
+					&:hover{
+						color: $primary!important;
+					}
+				}
 			}
 		}
 	}
-	&__item{
-		@extend .btn;
-		@extend .btn-white;
-		padding: 6px 21.5px;
-		color: $black!important;
-		font-size: 14px;
-		line-height: calc(16/14);
 
-		@include media-breakpoint-up(lg){
-			padding: 0!important;
-			border: none!important;
-			box-shadow: none!important;
-			background-color: transparent!important;
-
-			font-size: rem(16);
-			line-height: calc(19/16);
-			color: $white!important;
-			&:hover{
-				color: $primary!important;
-			}
-		}
-	}
 	&__{}
 	&__{}
 } // end.topLine
+
+
+.fixed-line{
+	@include mt();
+	pointer-events: none;
+	opacity: 0;
+	&.active{
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	box-shadow: 0 0 8px 0px rgba($black, .33);
+
+	padding: rem(15) 0;
+	@include media-breakpoint-up(lg){
+		padding: 0;
+	}
+	//
+	position: fixed;
+	z-index: 800;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $white;
+
+	.menu{
+
+		.swiper{
+			overflow: visible!important;
+			@include mt();
+		}
+		.swiper-wrapper{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			@include media-breakpoint-up(lg){
+				justify-content: space-between!important;
+				flex-wrap: nowrap!important;
+				width: 100% !important;
+				transform: none!important;
+			}
+		}
+		.swiper-slide{
+			width: auto;
+
+			margin-right: 10px;
+			@include media-breakpoint-up(lg){
+				margin-right: 0!important;
+			}
+
+			a{
+				@extend .btn;
+				@extend .btn-info;
+				padding: 6px 21.5px;
+				color: $white!important;
+				font-size: 14px;
+				line-height: calc(16/14);
+
+				@include media-breakpoint-up(lg){
+					display: block;
+					padding: rem(30) 0!important;
+
+					font-size: rem(16);
+					line-height: calc(19/16);
+					color: $black!important;
+					border: none!important;
+					box-shadow: none!important;
+					background-color: transparent!important;
+				}
+
+				position: relative;
+				&:after{
+					@include mt();
+					opacity: 0;
+					@include media-breakpoint-up(lg){
+						content: '';
+					}
+					position: absolute;
+					pointer-events: none;
+					bottom: 0;
+					left: rem(-9);
+					width: calc(100% + #{rem(18)});
+					height: rem(5);
+					background: $cyan;
+				}
+
+				//-
+				&:hover{
+					&:after{
+						opacity: 1;
+					}
+				}
+
+			}
+		}
+	}
+
+	//-
+	&__mail{
+		display: inline-block;
+		font-size: rem(14);
+		line-height: calc(16/14);
+		margin-bottom: rem(7);
+		text-align: right;
+		color: $gray-650;
+
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	&__tell{
+		font-weight: 600;
+		font-size: rem(17);
+		@include media-breakpoint-up(xl){
+			font-size: rem(18);
+		}
+		line-height: calc(21/18);
+
+		color: $black;
+		&:hover{
+			color: $cyan;
+		}
+	}
+
+	&__callback-btn{
+		@extend .btn;
+		@extend .btn-info;
+
+		font-weight: 600;
+		font-size: rem(12);
+		line-height: calc(14/12);
+		letter-spacing: rem(0.5);
+		text-transform: uppercase;
+		color: $white!important;
+
+		padding: rem(20);
+
+		@include media-breakpoint-up(xl){
+			width: rem(199);
+		}
+
+		border: none!important;
+		position: relative;
+		z-index: 1;
+		&:after{
+			@include mt();
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			background: linear-gradient(180deg, #72CBFF 0%, #52A7D8 100%);
+		}
+
+		&:hover{
+			&:after{
+				//opacity: .7;
+				//background: linear-gradient(180deg, lighten(#72CBFF, 5) 0%, #52A7D8 100%);
+			}
+		}
+	}
+
+}

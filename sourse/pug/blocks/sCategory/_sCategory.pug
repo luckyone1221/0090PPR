@@ -1,0 +1,40 @@
+mixin sCategory(data)
+	// start sCategory
+	+b.SECTION.sCategory.section#sCategory&attributes(attributes)
+		+e.PICTURE.bg
+			source(type="image/webp" srcset="img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)")
+			source(type="image/webp" srcset="img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)")
+			img(loading="lazy" src="img/@2x/sCategory-bg.png")
+		//-+pic('sCategory-pencil.png')(class="sCategory__pic sCategory__pic--pencil")
+		+e.pic--pencil
+			img(src="img/@2x/sCategory-pencil.png" alt="")
+		+pic('sCategory-paper.png')(class="sCategory__pic sCategory__pic--paper d-none d-xl-block")
+		.container
+			+b.section-title.text-center
+				h2 23 категории и 12 834 вида работ
+				p
+					| Если не найдете свой ППР в списке — позвоните нам. Мы&#160;сделаем
+					|
+					span любой
+					|
+					| строительный ППР от 15 000 ₽ и за 2–3 дня.
+			+e.row.row
+				+sCategoryItem(2, 'Электромонтажные работы')
+				+sCategoryItem(1, 'Кровельные работы')
+				+sCategoryItem(2, 'Электромонтажные работы')
+				+sCategoryItem(2, 'Электромонтажные работы', undefined, 'd-none d-sm-flex')
+				+sCategoryItem(1, 'Кровельные работы', undefined, 'd-none d-sm-flex')
+				+sCategoryItem(2, 'Электромонтажные работы', undefined, 'd-none d-sm-flex')
+			+e.btn(type="button")
+				+icon('reload')
+				span Смотеть больше категорий ппр
+
+	// end sCategory
+
+mixin sCategoryItem(imgNum,title, price='от 15 000 ₽', addClasses='')
+	.col-sm-6.col-lg-4.col-xl-3(class=addClasses)
+		+e.item
+			+pic(`sCategory-${imgNum}.jpg`)(class="sCategory__img")
+			+e.title=title
+			+e.price=price
+			+e.i-btn(href="#") Заказать ППр

@@ -3,10 +3,19 @@ extends layout/main.pug
 
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
+include ../blocks/sAlso/_sAlso.pug
+include ../blocks/sMade/_sMade.pug
+include ../blocks/sCategory/_sCategory.pug
+include ../blocks/sOrder/_sOrder.pug
+include ../blocks/sSpec/_sSpec.pug
+include ../blocks/sStandart/_sStandart.pug
+include ../blocks/sDay/_sDay.pug
+include ../blocks/sOpen/_sOpen.pug
+include ../blocks/sFeedback/_sFeedback.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg="01-375.png"
+	- let  bg="01.png"
 
 block title
 	- let  title= 'title'
@@ -17,6 +26,28 @@ block pagecontent
 		+top-nav()
 		+topLine()
 	+headerBlock()
-	//+sForm()
-	//+sContact()
+	+sForm()
+	+sAlso()
+	+sMade()
+	+sCategory()
+	+sOrder({
+
+	})
+	+sSpec()
+	+sStandart()
+	+sDay()
+	//remove d-none if u need another form on mob devide, css is ready
+	+sForm()(class="sForm--alt d-none d-sm-block")
+	+sOpen()
+	+sFeedback()
+	+sOrder({
+		pencil: true,
+	})
+		| Бесплатная
+		|
+		span консультация и расчет
+		|
+		| цены по телефону
+	//-
+	+sContact()
 	+footer()

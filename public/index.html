@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page" data-bg="01-375.png">
+	<body class="main-page" data-bg="01.png">
 		<div class="main-wrapper">
 			<!-- start header-->
 			<header class="header header--js" id="header">
@@ -103,38 +103,92 @@
 				<!-- start topLine-->
 				<div class="topLine" id="topLine">
 					<div class="container-lg">
-						<div class="topLine__slider-wrap">
+						<div class="menu">
 							<div class="swiper menu-slide-js">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Услуги
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Услуги
 										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Выполненые проекты
+									</li>
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Выполненые проекты
 										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Калькулятор
+									</li>
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Калькулятор
 										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Отзывы
+									</li>
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Отзывы
 										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Сертификаты
+									</li>
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Сертификаты
 										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Новости
+									</li>
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Новости
 										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="topLine__item" href="#">Контакты
+									</li>
+									<li class="swiper-slide">
+										<a class="menu__item" href="#">Контакты
 										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fixed-line fixed-line--js">
+					<div class="container-lg">
+						<div class="row align-items-center">
+							<div class="col-lg">
+								<div class="menu">
+									<div class="swiper menu-slide-js">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Услуги
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Выполненые проекты
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Калькулятор
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Отзывы
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Сертификаты
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Новости
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a class="menu__item" href="#">Контакты
+												</a>
+											</li>
+										</ul>
 									</div>
 								</div>
+							</div>
+							<div class="col-auto d-none d-lg-block text-end">
+								<a class="fixed-line__mail" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
+								</a>
+								<div>
+									<a class="fixed-line__tell" href="telto:+74959713971">+7 (495) 971-39-71
+									</a>
+								</div>
+							</div>
+							<div class="col-auto d-none d-lg-block">
+								<a class="fixed-line__callback-btn" href="#">Обратный звонок
+								</a>
 							</div>
 						</div>
 					</div>
@@ -146,18 +200,12 @@
 			<section class="headerBlock section" id="headerBlock">
 				<!-- picture-->
 				<picture class="headerBlock__bg"> 
-					<source type="image/webp" srcset="img/@2x/webp/headerBlock-bg.webp" media="(min-width:576px)"/>
-					<source type="image/webp" srcset="img/@1x/webp/headerBlock-bg.webp"/>
-					<source type="image/jpg" srcset="img/@2x/headerBlock-bg.jpg" media="(min-width:576px)"/>
-					<source type="image/jpg" srcset="img/@1x/headerBlock-bg.jpg"/><img src="img/@2x/headerBlock-bg.jpg" alt="" loading="lazy"/>
+					<source type="image/webp" srcset="img/@2x/webp/headerBlock-bg.webp"/><img src="img/@2x/headerBlock-bg.jpg" alt="" loading="lazy"/>
 				</picture>
 				<!-- /picture-->
 				<!-- picture-->
 				<picture class="headerBlock__paper d-none d-lg-block"> 
-					<source type="image/webp" srcset="img/@2x/webp/headerBlock-paper.webp" media="(min-width:576px)"/>
-					<source type="image/webp" srcset="img/@1x/webp/headerBlock-paper.webp"/>
-					<source type="image/png" srcset="img/@2x/headerBlock-paper.png" media="(min-width:576px)"/>
-					<source type="image/png" srcset="img/@1x/headerBlock-paper.png"/><img src="img/@2x/headerBlock-paper.png" alt="" loading="lazy"/>
+					<source type="image/webp" srcset="img/@2x/webp/headerBlock-paper.webp"/><img src="img/@2x/headerBlock-paper.png" alt="" loading="lazy"/>
 				</picture>
 				<!-- /picture-->
 				<div class="container">
@@ -242,43 +290,1668 @@
 				</div>
 			</section>
 			<!-- end headerBlock-->
-			<!--+sForm()-->
-			<!--+sContact()-->
-			<footer class="footer">
+			<!-- start sForm-->
+			<section class="sForm section">
 				<div class="container">
-					<div class="row">
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col-auto"></div>
+					<div class="sForm__box-wrap">
+						<div class="sForm__box">
+							<div class="section-title text-center text-md-start">
+								<h2>
+									Заказать ППР на
+									<span>монолитные работы</span>
+								</h2>
+							</div>
+							<div class="sForm__search-box">
+								<div class="sForm__input-wrap"><input class="sForm__input form-control" type="text" name="search" placeholder="Введите свой ППР в поиск"/>
+									<button class="sForm__btn" type="submit">Найти ППР
+									</button>
+								</div>
+								<div class="sForm__result-row row d-none d-md-flex">
+									<div class="col-auto">
+										<div class="sForm__key">Найдено результатов:
+										</div>
+										<div class="sForm__val">2
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="sForm__key">Категорий ППР:
+										</div>
+										<div class="sForm__val">23
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="sForm__key">Видов ППР:
+										</div>
+										<div class="sForm__val">12 834
+										</div>
+									</div>
+								</div>
+								<div class="sForm__head-row row align-items-center">
+									<div class="sForm__for-col col-md text-center text-md-start">ППР для…
+									</div>
+									<div class="col-md-auto d-none d-md-block">
+										<a class="sForm__show-more" href="#">
+											<svg class="icon icon-reload ">
+												<use xlink:href="img/svg/sprite.svg#reload"></use>
+											</svg><span class="sForm__sm-txt">Показать больше</span>
+										</a>
+									</div>
+								</div>
+								<div class="sForm__items text-center text-md-start">
+									<div class="sForm__item">
+										<div class="sForm__i-row row align-items-center">
+											<div class="sForm__i-title col-md">электромонтажных работ
+											</div>
+											<div class="sForm__i-price col-md-auto">от 15 000 ₽
+											</div>
+											<div class="col-md-auto">
+												<a class="sForm__i-btn" href="#">Заказать ППр
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sForm__item d-none d-md-block">
+										<div class="sForm__i-row row align-items-center">
+											<div class="sForm__i-title col-md">кровельных работ
+											</div>
+											<div class="sForm__i-price col-md-auto">от 15 000 ₽
+											</div>
+											<div class="col-md-auto">
+												<a class="sForm__i-btn" href="#">Заказать ППр
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-center d-md-none">
+									<a class="sForm__show-more" href="#">
+										<svg class="icon icon-reload ">
+											<use xlink:href="img/svg/sprite.svg#reload"></use>
+										</svg><span class="sForm__sm-txt">Показать больше</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sForm-->
+			<!-- start sAlso-->
+			<section class="sAlso section" id="sAlso">
+				<!-- picture-->
+				<picture class="sAlso__bg d-none d-xxl-block"> 
+					<source type="image/webp" srcset="img/@2x/webp/pin.webp"/><img src="img/@2x/pin.png" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="section-title text-center text-md-start">
+						<h2>Также разрабатываем:</h2>
+					</div>
+					<div class="sAlso__row row">
+						<div class="col-lg-4">
+							<a class="sAlso__item" href="#">
+								<div class="sAlso__i-row row align-items-center flex-nowrap">
+									<div class="col-auto">
+										<!-- picture-->
+										<picture class="sAlso__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sAlsoItem-c-1.webp"/><img src="img/@2x/sAlsoItem-c-1.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+									</div>
+									<div class="sAlso__txt-col col">Проекты организации дорожного движения (ПОДД)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a class="sAlso__item" href="#">
+								<div class="sAlso__i-row row align-items-center flex-nowrap">
+									<div class="col-auto">
+										<!-- picture-->
+										<picture class="sAlso__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sAlsoItem-c-2.webp"/><img src="img/@2x/sAlsoItem-c-2.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+									</div>
+									<div class="sAlso__txt-col col">Проекты организации строительства (ПОС)
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4">
+							<a class="sAlso__item" href="#">
+								<div class="sAlso__i-row row align-items-center flex-nowrap">
+									<div class="col-auto">
+										<!-- picture-->
+										<picture class="sAlso__img"> 
+											<source type="image/webp" srcset="img/@2x/webp/sAlsoItem-c-3.webp"/><img src="img/@2x/sAlsoItem-c-3.png" alt="" loading="lazy"/>
+										</picture>
+										<!-- /picture-->
+									</div>
+									<div class="sAlso__txt-col col">ППР для открытия Ордера ОАТИ (ОАТИ)
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sAlso-->
+			<!-- start sMade-->
+			<section class="sMade section" id="sMade">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							Нами разработано
+							<span>4800 ППР с 2006 года</span>
+						</h2>
+					</div>
+					<div class="sMade__slider-wrap">
+						<div class="swiper sMade-slider-js">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sMade__item-wrap">
+										<div class="sMade__item">
+											<div class="sMade__i-row row justify-content-center">
+												<div class="sMade__col sMade__col--img col-md-9 col-lg-6 col-xl-auto">
+													<a class="sMade__link" href="img/@2x/sMadeSlide-1.png" data-fancybox="sMadeSlide">
+														<!-- picture-->
+														<picture class="sMade__img"> 
+															<source type="image/webp" srcset="img/@2x/webp/sMadeSlide-1.webp"/><img src="img/@2x/sMadeSlide-1.png" alt="" loading="lazy"/>
+														</picture>
+														<!-- /picture-->
+														<div class="sMade__btn-pl">
+															<svg class="icon icon-zoom-pl ">
+																<use xlink:href="img/svg/sprite.svg#zoom-pl"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+												<div class="sMade__col sMade__col--content col-lg-6 col-xl text-center text-lg-start">
+													<div class="sMade__title">Проект производства работ  для электромонтажа
+													</div>
+													<div class="sMade__client">Клиент: ООО «ПромТоргСтрой»
+													</div>
+													<div class="sMade__b-row row justify-content-lg-start justify-content-center">
+														<div class="col-12">
+															<div class="sMade__difficulty">
+																<div class="sMade__d-txt">Сложность
+																</div>
+																<div class="sMade__d-stars">
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">7 листов графической части
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">230 страниц
+															</div>
+														</div>
+													</div>
+													<a class="sMade__btn" href="#">Узнать стоимость такого ппр
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sMade__item-wrap">
+										<div class="sMade__item">
+											<div class="sMade__i-row row justify-content-center">
+												<div class="sMade__col sMade__col--img col-md-9 col-lg-6 col-xl-auto">
+													<a class="sMade__link" href="img/@2x/sMadeSlide-1.png" data-fancybox="sMadeSlide">
+														<!-- picture-->
+														<picture class="sMade__img"> 
+															<source type="image/webp" srcset="img/@2x/webp/sMadeSlide-1.webp"/><img src="img/@2x/sMadeSlide-1.png" alt="" loading="lazy"/>
+														</picture>
+														<!-- /picture-->
+														<div class="sMade__btn-pl">
+															<svg class="icon icon-zoom-pl ">
+																<use xlink:href="img/svg/sprite.svg#zoom-pl"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+												<div class="sMade__col sMade__col--content col-lg-6 col-xl text-center text-lg-start">
+													<div class="sMade__title">Проект производства работ  для электромонтажа
+													</div>
+													<div class="sMade__client">Клиент: ООО «ПромТоргСтрой»
+													</div>
+													<div class="sMade__b-row row justify-content-lg-start justify-content-center">
+														<div class="col-12">
+															<div class="sMade__difficulty">
+																<div class="sMade__d-txt">Сложность
+																</div>
+																<div class="sMade__d-stars">
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">7 листов графической части
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">230 страниц
+															</div>
+														</div>
+													</div>
+													<a class="sMade__btn" href="#">Узнать стоимость такого ппр
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sMade__item-wrap">
+										<div class="sMade__item">
+											<div class="sMade__i-row row justify-content-center">
+												<div class="sMade__col sMade__col--img col-md-9 col-lg-6 col-xl-auto">
+													<a class="sMade__link" href="img/@2x/sMadeSlide-1.png" data-fancybox="sMadeSlide">
+														<!-- picture-->
+														<picture class="sMade__img"> 
+															<source type="image/webp" srcset="img/@2x/webp/sMadeSlide-1.webp"/><img src="img/@2x/sMadeSlide-1.png" alt="" loading="lazy"/>
+														</picture>
+														<!-- /picture-->
+														<div class="sMade__btn-pl">
+															<svg class="icon icon-zoom-pl ">
+																<use xlink:href="img/svg/sprite.svg#zoom-pl"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+												<div class="sMade__col sMade__col--content col-lg-6 col-xl text-center text-lg-start">
+													<div class="sMade__title">Проект производства работ  для электромонтажа
+													</div>
+													<div class="sMade__client">Клиент: ООО «ПромТоргСтрой»
+													</div>
+													<div class="sMade__b-row row justify-content-lg-start justify-content-center">
+														<div class="col-12">
+															<div class="sMade__difficulty">
+																<div class="sMade__d-txt">Сложность
+																</div>
+																<div class="sMade__d-stars">
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">7 листов графической части
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">230 страниц
+															</div>
+														</div>
+													</div>
+													<a class="sMade__btn" href="#">Узнать стоимость такого ппр
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sMade__item-wrap">
+										<div class="sMade__item">
+											<div class="sMade__i-row row justify-content-center">
+												<div class="sMade__col sMade__col--img col-md-9 col-lg-6 col-xl-auto">
+													<a class="sMade__link" href="img/@2x/sMadeSlide-1.png" data-fancybox="sMadeSlide">
+														<!-- picture-->
+														<picture class="sMade__img"> 
+															<source type="image/webp" srcset="img/@2x/webp/sMadeSlide-1.webp"/><img src="img/@2x/sMadeSlide-1.png" alt="" loading="lazy"/>
+														</picture>
+														<!-- /picture-->
+														<div class="sMade__btn-pl">
+															<svg class="icon icon-zoom-pl ">
+																<use xlink:href="img/svg/sprite.svg#zoom-pl"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+												<div class="sMade__col sMade__col--content col-lg-6 col-xl text-center text-lg-start">
+													<div class="sMade__title">Проект производства работ  для электромонтажа
+													</div>
+													<div class="sMade__client">Клиент: ООО «ПромТоргСтрой»
+													</div>
+													<div class="sMade__b-row row justify-content-lg-start justify-content-center">
+														<div class="col-12">
+															<div class="sMade__difficulty">
+																<div class="sMade__d-txt">Сложность
+																</div>
+																<div class="sMade__d-stars">
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">7 листов графической части
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">230 страниц
+															</div>
+														</div>
+													</div>
+													<a class="sMade__btn" href="#">Узнать стоимость такого ппр
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sMade__item-wrap">
+										<div class="sMade__item">
+											<div class="sMade__i-row row justify-content-center">
+												<div class="sMade__col sMade__col--img col-md-9 col-lg-6 col-xl-auto">
+													<a class="sMade__link" href="img/@2x/sMadeSlide-1.png" data-fancybox="sMadeSlide">
+														<!-- picture-->
+														<picture class="sMade__img"> 
+															<source type="image/webp" srcset="img/@2x/webp/sMadeSlide-1.webp"/><img src="img/@2x/sMadeSlide-1.png" alt="" loading="lazy"/>
+														</picture>
+														<!-- /picture-->
+														<div class="sMade__btn-pl">
+															<svg class="icon icon-zoom-pl ">
+																<use xlink:href="img/svg/sprite.svg#zoom-pl"></use>
+															</svg>
+														</div>
+													</a>
+												</div>
+												<div class="sMade__col sMade__col--content col-lg-6 col-xl text-center text-lg-start">
+													<div class="sMade__title">Проект производства работ  для электромонтажа
+													</div>
+													<div class="sMade__client">Клиент: ООО «ПромТоргСтрой»
+													</div>
+													<div class="sMade__b-row row justify-content-lg-start justify-content-center">
+														<div class="col-12">
+															<div class="sMade__difficulty">
+																<div class="sMade__d-txt">Сложность
+																</div>
+																<div class="sMade__d-stars">
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="icon icon-star ">
+																		<use xlink:href="img/svg/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">7 листов графической части
+															</div>
+														</div>
+														<div class="col-md-auto">
+															<div class="sMade__blue">230 страниц
+															</div>
+														</div>
+													</div>
+													<a class="sMade__btn" href="#">Узнать стоимость такого ппр
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sMade-->
+			<!-- start sCategory-->
+			<section class="sCategory section" id="sCategory">
+				<picture class="sCategory__bg">
+					<source type="image/webp" srcset="img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)"/><img loading="lazy" src="img/@2x/sCategory-bg.png"/>
+				</picture>
+				<div class="sCategory__pic sCategory__pic--pencil"><img src="img/@2x/sCategory-pencil.png" alt=""/>
+				</div>
+				<!-- picture-->
+				<picture class="sCategory__pic sCategory__pic--paper d-none d-xl-block"> 
+					<source type="image/webp" srcset="img/@2x/webp/sCategory-paper.webp"/><img src="img/@2x/sCategory-paper.png" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>23 категории и 12 834 вида работ</h2>
+						<p>
+							Если не найдете свой ППР в списке — позвоните нам. Мы&#160;сделаем
+							<span>любой</span>
+							строительный ППР от 15 000 ₽ и за 2–3 дня.
+						</p>
+					</div>
+					<div class="sCategory__row row">
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img"> 
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-2.webp"/><img src="img/@2x/sCategory-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Электромонтажные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn" href="#">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img"> 
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-1.webp"/><img src="img/@2x/sCategory-1.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Кровельные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn" href="#">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img"> 
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-2.webp"/><img src="img/@2x/sCategory-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Электромонтажные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn" href="#">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3 d-none d-sm-flex">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img"> 
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-2.webp"/><img src="img/@2x/sCategory-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Электромонтажные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn" href="#">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3 d-none d-sm-flex">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img"> 
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-1.webp"/><img src="img/@2x/sCategory-1.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Кровельные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn" href="#">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3 d-none d-sm-flex">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img"> 
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-2.webp"/><img src="img/@2x/sCategory-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Электромонтажные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn" href="#">Заказать ППр
+								</a>
+							</div>
+						</div>
+					</div>
+					<button class="sCategory__btn" type="button">
+						<svg class="icon icon-reload ">
+							<use xlink:href="img/svg/sprite.svg#reload"></use>
+						</svg><span>Смотеть больше категорий ппр</span>
+					</button>
+				</div>
+			</section>
+			<!-- end sCategory-->
+			<!-- start sOrder-->
+			<section class="sOrder section" id="sOrder">
+				<div class="container">
+					<div class="sOrder__row row">
+						<div class="col-lg-7">
+							<div class="section-title text-center text-lg-start">
+								<h2>
+									Закажите ППР
+									<span>на&#160;любой&#160;вид</span>
+									строительных работ
+								</h2>
+								<p>Мы сделаем любой строительный ППР или&#160;(ППРк) от 15 000 ₽ за 2–3 дня.</p>
+							</div>
+							<div class="sOrder__items">
+								<div class="sOrder__item">
+									<div class="sOrder__i-row row">
+										<div class="col-auto">
+											<div class="sOrder__ball">
+												<svg class="icon icon-check ">
+													<use xlink:href="img/svg/sprite.svg#check"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sOrder__sub-row row">
+												<div class="col-auto">
+													<div class="sOrder__title">Разработка ППР на любой вид работ
+													</div>
+													<div class="sOrder__descr d-none d-sm-block">из 23 категорий и 12 834 видов работ
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 d-sm-none">
+											<div class="sOrder__descr">из 23 категорий и 12 834 видов работ
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__item d-none d-lg-block item-inverse">
+									<div class="sOrder__i-row row">
+										<div class="col-auto">
+											<div class="sOrder__ball">
+												<svg class="icon icon-check ">
+													<use xlink:href="img/svg/sprite.svg#check"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sOrder__sub-row row">
+												<div class="col-auto">
+													<div class="sOrder__title">Цены
+													</div>
+													<div class="sOrder__descr">от 15 000 ₽
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="sOrder__title">Доработки
+													</div>
+													<div class="sOrder__descr">без ограничений
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="sOrder__title">Сроки
+													</div>
+													<div class="sOrder__descr">2–3 дня
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="sOrder__title">Предоплата
+													</div>
+													<div class="sOrder__descr">0 ₽
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__item">
+									<div class="sOrder__i-row row">
+										<div class="col-auto">
+											<div class="sOrder__ball">
+												<svg class="icon icon-check ">
+													<use xlink:href="img/svg/sprite.svg#check"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sOrder__sub-row row">
+												<div class="col-auto">
+													<div class="sOrder__title">Скидка 15% в день заказа
+													</div>
+													<div class="sOrder__descr d-none d-sm-block">на ваш первый ППР или ППРк
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 d-sm-none">
+											<div class="sOrder__descr">на ваш первый ППР или ППРк
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sOrder__item green-item d-lg-none">
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Цены
+										</div>
+										<div class="sOrder__descr">от 15 000 ₽
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Доработки
+										</div>
+										<div class="sOrder__descr">без ограничений
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Сроки
+										</div>
+										<div class="sOrder__descr">2–3 дня
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Предоплата
+										</div>
+										<div class="sOrder__descr">0 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="form-wrap">
+								<form>
+									<div class="form-wrap__box">
+										<div class="text-center">
+											<div class="form-wrap__title">
+												Перезвоним через
+												<span>5–7 минут</span>
+											</div>
+											<div class="form-wrap__sm-txt">Заполните форму:
+											</div>
+										</div>
+										<div class="form-wrap__inputs">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Какой ППР вам нужен?"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="tell" type="tell" placeholder="На какой телефон перезвонить?"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Как вас зовут?"/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<button class="form-wrap__btn" type="submit">Заказать ппр со скидкой 15%
+										</button>
+									</div>
+									<div class="form-wrap__green-box">
+										<div class="form-wrap__g-row row align-items-center justify-content-center">
+											<div class="form-wrap__g-val col-auto">15%
+											</div>
+											<div class="form-wrap__g-txt col-auto">Скидка на 1-й ППР или ППРк
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sOrder-->
+			<!-- start sSpec-->
+			<section class="sSpec section" id="sSpec">
+				<picture class="sSpec__bg">
+					<source type="image/webp" srcset="img/@2x/webp/sSpec-bg.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@2x/webp/sSpec-bg-mob.webp" media="(max-width:576px)"/><img loading="lazy" src="img/@2x/sSpec-bg.png"/>
+				</picture>
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>
+							Над каждым ППР работает
+							<span>6&#160;специалистов</span>
+						</h2>
+					</div>
+					<div class="sSpec__slider-wrap">
+						<div class="swiper sSpec-slider-js">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sSpec__card-wrap">
+										<div class="sSpec__card">
+											<div class="sSpec__top-row row align-items-center">
+												<div class="col-auto">
+													<div class="sSpec__img"><img loading="lazy" src="img/svg/user-stab.svg" alt=""/>
+													</div>
+												</div>
+												<div class="sSpec__name-col col">Главный инженер проекта
+												</div>
+											</div>
+											<div class="sSpec__descr">Отвечает за проект на выходе, проверяет на соответствие нормам, ГОСТ, СП и технике безопасности
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide d-none d-sm-flex">
+									<div class="sSpec__card-wrap">
+										<div class="sSpec__card">
+											<div class="sSpec__top-row row align-items-center">
+												<div class="col-auto">
+													<div class="sSpec__img"><img loading="lazy" src="img/svg/user-stab.svg" alt=""/>
+													</div>
+												</div>
+												<div class="sSpec__name-col col">Инженер проектировщик ОДД
+												</div>
+											</div>
+											<div class="sSpec__descr">Разрабатывает ППР для работ с выходом на проезжую часть или тротуар, например, при прокладке наружных сетей и строительных лесов
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide d-none d-sm-flex">
+									<div class="sSpec__card-wrap">
+										<div class="sSpec__card">
+											<div class="sSpec__top-row row align-items-center">
+												<div class="col-auto">
+													<div class="sSpec__img"><img loading="lazy" src="img/svg/user-stab.svg" alt=""/>
+													</div>
+												</div>
+												<div class="sSpec__name-col col">Главный инженер проекта
+												</div>
+											</div>
+											<div class="sSpec__descr">Отвечает за проект на выходе, проверяет на соответствие нормам, ГОСТ, СП и технике безопасности
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sSpec__card-wrap">
+										<div class="sSpec__card">
+											<div class="sSpec__top-row row align-items-center">
+												<div class="col-auto">
+													<div class="sSpec__img"><img loading="lazy" src="img/svg/user-stab.svg" alt=""/>
+													</div>
+												</div>
+												<div class="sSpec__name-col col">Главный инженер проекта
+												</div>
+											</div>
+											<div class="sSpec__descr">Отвечает за проект на выходе, проверяет на соответствие нормам, ГОСТ, СП и технике безопасности
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sSpec__card-wrap">
+										<div class="sSpec__card">
+											<div class="sSpec__top-row row align-items-center">
+												<div class="col-auto">
+													<div class="sSpec__img"><img loading="lazy" src="img/svg/user-stab.svg" alt=""/>
+													</div>
+												</div>
+												<div class="sSpec__name-col col">Главный инженер проекта
+												</div>
+											</div>
+											<div class="sSpec__descr">Отвечает за проект на выходе, проверяет на соответствие нормам, ГОСТ, СП и технике безопасности
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sSpec__card-wrap">
+										<div class="sSpec__card">
+											<div class="sSpec__top-row row align-items-center">
+												<div class="col-auto">
+													<div class="sSpec__img"><img loading="lazy" src="img/svg/user-stab.svg" alt=""/>
+													</div>
+												</div>
+												<div class="sSpec__name-col col">Главный инженер проекта
+												</div>
+											</div>
+											<div class="sSpec__descr">Отвечает за проект на выходе, проверяет на соответствие нормам, ГОСТ, СП и технике безопасности
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination d-md-none"></div>
+						</div>
+					</div>
+					<div class="text-center">
+						<a class="sSpec__btn" href="#"><img loading="lazy" src="img/svg/calc.svg" alt=""/><span>Рассчитать стоимость</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end sSpec-->
+			<!-- start sStandart-->
+			<section class="sStandart section" id="sStandart">
+				<!-- picture-->
+				<picture class="sStandart__bg d-none d-lg-block"> 
+					<source type="image/webp" srcset="img/@2x/webp/sStandart-bg.webp"/><img src="img/@2x/sStandart-bg.png" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="sStandart__row row">
+						<div class="col-lg-7 col-xl-8">
+							<div class="section-title text-center text-lg-start">
+								<h2>
+									ППР и ППРк по строительным
+									<span>стандартам</span>
+								</h2>
+								<p>Строго соблюдаем строительные правила, МДС, ГОСТ и СП 48.13330.2019 «Организация строительства»</p>
+							</div>
+							<div class="sStandart__items-row row">
+								<div class="col-md-6">
+									<div class="sStandart__item">
+										<div class="sStandart__i-row row align-items-center">
+											<div class="col-auto">
+												<div class="sStandart__i-ball"><img loading="lazy" src="img/svg/check-ball.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<div class="sStandart__i-title">Техкарты на каждый вид работ
+												</div>
+											</div>
+										</div>
+										<div class="sStandart__descr">Разрабатываются на отдельные виды работ с целью внедрения передовых методов строительства
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sStandart__item">
+										<div class="sStandart__i-row row align-items-center">
+											<div class="col-auto">
+												<div class="sStandart__i-ball"><img loading="lazy" src="img/svg/check-ball.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<div class="sStandart__i-title">Календарное планирование
+												</div>
+											</div>
+										</div>
+										<div class="sStandart__descr">Устанавливает целесообразную последовательность, взаимную увязку и сроки выполнения работ
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sStandart__item">
+										<div class="sStandart__i-row row align-items-center">
+											<div class="col-auto">
+												<div class="sStandart__i-ball"><img loading="lazy" src="img/svg/check-ball.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<div class="sStandart__i-title">Схемы размещения знаков с геодезической информацией
+												</div>
+											</div>
+										</div>
+										<div class="sStandart__descr">Необходимое условие своевременного и качественного выполнения геодезических работ на стройплощадке
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sStandart__item">
+										<div class="sStandart__i-row row align-items-center">
+											<div class="col-auto">
+												<div class="sStandart__i-ball"><img loading="lazy" src="img/svg/check-ball.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<div class="sStandart__i-title">Технологические графики
+												</div>
+											</div>
+										</div>
+										<div class="sStandart__descr">Поставок стройконструкций, оборудования и материалов, маршрутов передвижения рабочих и механизмов в пределах объекта
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sStandart__item">
+										<div class="sStandart__i-row row align-items-center">
+											<div class="col-auto">
+												<div class="sStandart__i-ball"><img loading="lazy" src="img/svg/check-ball.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<div class="sStandart__i-title">Пояснительные записки
+												</div>
+											</div>
+										</div>
+										<div class="sStandart__descr">В соответствии с типом объекта строительства, видами работ, технической сложностью проекта и прочими данными
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="sStandart__item">
+										<div class="sStandart__i-row row align-items-center">
+											<div class="col-auto">
+												<div class="sStandart__i-ball"><img loading="lazy" src="img/svg/check-ball.svg" alt=""/>
+												</div>
+											</div>
+											<div class="col">
+												<div class="sStandart__i-title">Стройгенплан
+												</div>
+											</div>
+										</div>
+										<div class="sStandart__descr">Регламентирует организацию труда на строительной площадке и объемы временного строительства
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--remove d-none d-sm-block, love pp-->
+							<a class="sStandart__btn d-none d-sm-block" href="#">Заказать ппр по строительным стандартам
+							</a>
+						</div>
+						<div class="col-lg">
+							<div class="sStandart__ball">
+								<div class="sStandart__b-light sStandart__b-light--top">И еще
+								</div>
+								<div class="sStandart__b-val">56
+								</div>
+								<div class="sStandart__b-light sStandart__b-light--bot">параметров
+								</div>
+								<div class="sStandart__b-txt">В зависимости от требуемого вами вида ППР
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- picture-->
+					<picture class="sStandart__paper"> 
+						<source type="image/webp" srcset="img/@2x/webp/sStandart-paper.webp"/><img src="img/@2x/sStandart-paper.png" alt="" loading="lazy"/>
+					</picture>
+					<!-- /picture-->
+				</div>
+			</section>
+			<!-- end sStandart-->
+			<!-- start sDay-->
+			<section class="sDay section" id="sDay">
+				<picture class="sDay__bg">
+					<source type="image/webp" srcset="img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)"/>
+					<source type="image/webp" srcset="img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)"/><img loading="lazy" src="img/@2x/sCategory-bg.png"/>
+				</picture>
+				<div class="sDay__img d-none d-xl-block"><img src="img/@2x/sDay-img.png" alt=""/>
+				</div>
+				<div class="container">
+					<div class="sDay__row row">
+						<div class="col-xl-8 ms-auto">
+							<div class="sDay__sub-row row">
+								<div class="col-md-6">
+									<div class="section-title text-center text-md-start">
+										<h2><span>2 дня</span>В среднем уходит на&#160;производство&#160;ППР</h2>
+									</div>
+								</div>
+								<div class="col-md-6 d-none d-md-block">
+									<div class="sDay__green">
+										<div class="sDay__green-bg"><img loading="lazy" src="img/svg/sDay-green.svg" alt=""/>
+										</div>
+										<p><b>Доставка ППР бесплатно</b>
+											при любой сумме заказа по Москве и области
+										</p>
+										<p>
+											Вы можете вносить
+											<b>неограниченное число доработок</b>
+											в процессе разработки ППР
+										</p>
+										<p><b>Соблюдение строительных правил,</b>
+											МДС, ГОСТ и  СП 48.13330.2019 «Организация строительства»
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="sDay__items-row row">
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title"><a href="#">Заявка на сайте</a>
+												, в офисе или по телефону
+											</div>
+										</div>
+										<div class="sDay__descr">Вы взаимодействуете не с менеджером, а с компетентным инженером
+										</div>
+									</div>
+								</div>
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title">Главный инженер оценивает объем ППР (ППРк),
+											</div>
+										</div>
+										<div class="sDay__descr">определяет вид работ и сложность разработки
+										</div>
+									</div>
+								</div>
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title">Подробный анализ
+											</div>
+										</div>
+										<div class="sDay__descr">исходных данных, выезд на объект
+										</div>
+									</div>
+								</div>
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title">При необходимости задействуем штатных специалистов
+											</div>
+										</div>
+										<div class="sDay__descr">по ОДД, ПОС, обследованию
+										</div>
+									</div>
+								</div>
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title">КП с объемами работ, составом ППР,
+											</div>
+										</div>
+										<div class="sDay__descr">перечнем необходимых исходных данных и точными сроками проектирования
+										</div>
+									</div>
+								</div>
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title">Готовим договор и техническое задание
+											</div>
+										</div>
+										<div class="sDay__descr">Начало разработки ППР
+										</div>
+									</div>
+								</div>
+								<div class="sDay__col col-md-6">
+									<div class="sDay__item">
+										<div class="sDay__title-wrap">
+											<div class="sDay__title">Завершение.
+											</div>
+										</div>
+										<div class="sDay__descr">Главный инженер проверяет проект на соответствие исходным данным, технике безопасности, нормам проектирования.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sDay-->
+			<!--remove d-none if u need another form on mob devide, css is ready-->
+			<!-- start sForm-->
+			<section class="sForm section sForm sForm--alt d-none d-sm-block">
+				<div class="container">
+					<div class="sForm__box-wrap">
+						<div class="sForm__box">
+							<div class="section-title text-center text-md-start">
+								<h2>
+									Заказать ППР на
+									<span>монолитные работы</span>
+								</h2>
+							</div>
+							<div class="sForm__search-box">
+								<div class="sForm__input-wrap"><input class="sForm__input form-control" type="text" name="search" placeholder="Введите свой ППР в поиск"/>
+									<button class="sForm__btn" type="submit">Найти ППР
+									</button>
+								</div>
+								<div class="sForm__result-row row d-none d-md-flex">
+									<div class="col-auto">
+										<div class="sForm__key">Найдено результатов:
+										</div>
+										<div class="sForm__val">2
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="sForm__key">Категорий ППР:
+										</div>
+										<div class="sForm__val">23
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="sForm__key">Видов ППР:
+										</div>
+										<div class="sForm__val">12 834
+										</div>
+									</div>
+								</div>
+								<div class="sForm__head-row row align-items-center">
+									<div class="sForm__for-col col-md text-center text-md-start">ППР для…
+									</div>
+									<div class="col-md-auto d-none d-md-block">
+										<a class="sForm__show-more" href="#">
+											<svg class="icon icon-reload ">
+												<use xlink:href="img/svg/sprite.svg#reload"></use>
+											</svg><span class="sForm__sm-txt">Показать больше</span>
+										</a>
+									</div>
+								</div>
+								<div class="sForm__items text-center text-md-start">
+									<div class="sForm__item">
+										<div class="sForm__i-row row align-items-center">
+											<div class="sForm__i-title col-md">электромонтажных работ
+											</div>
+											<div class="sForm__i-price col-md-auto">от 15 000 ₽
+											</div>
+											<div class="col-md-auto">
+												<a class="sForm__i-btn" href="#">Заказать ППр
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sForm__item d-none d-md-block">
+										<div class="sForm__i-row row align-items-center">
+											<div class="sForm__i-title col-md">кровельных работ
+											</div>
+											<div class="sForm__i-price col-md-auto">от 15 000 ₽
+											</div>
+											<div class="col-md-auto">
+												<a class="sForm__i-btn" href="#">Заказать ППр
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="text-center d-md-none">
+									<a class="sForm__show-more" href="#">
+										<svg class="icon icon-reload ">
+											<use xlink:href="img/svg/sprite.svg#reload"></use>
+										</svg><span class="sForm__sm-txt">Показать больше</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sForm-->
+			<!-- start sOpen-->
+			<section class="sOpen sOpen--js section" id="sOpen">
+				<div class="sOpen__container container">
+					<div class="sOpen__bg d-none d-xl-block"><img loading="lazy" src="img/@2x/sOpen-img.png" alt=""/>
+					</div>
+					<div class="section-title">
+						<p>О компании «С-Проджект»</p>
+						<h2>
+							Мы открылись не «вчера» и
+							<span>не закроемся «завтра»</span>
+							— поэтому нам доверяют
+						</h2>
+						<p>Работаем с 2006 года, что подтверждается сертификатами, полученными в этот период. Разработали ППР и ППРк для известных компаний, среди которых: «Мерседес», «Сбербанк», «Аэрофлот» и еще порядка 20 топовых брендов. Не стремимся работать только с лидерами рынка, просто за 15 лет нас сложно было не заметить и не прийти к нам. Если вы из малого и среднего бизнеса, то вас мы ждем не меньше — наши цены вам понравятся.</p>
+						<p>Вам стоит выбрать нас, потому что мы гарантируем вам ППР и ППРк, сделанный по строительным стандартам. Мы будем работать над вашим ППР до полного утверждения. Компания, к результатам работы которой у вас не будет вопросов — это мы.</p>
+					</div>
+					<div class="sOpen__cert-title"><span>Лицензии</span>
+						на осуществление деятельности, начиная с дня основания и по сегодняшний день
+					</div>
+					<div class="sOpen__slider-wrap">
+						<div class="swiper sOpen-slider-js">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none d-xl-block">
+								<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+									<svg class="icon icon-arrow-left ">
+										<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!-- end sOpen-->
+			<!-- start sFeedback-->
+			<section class="sFeedback sFeedback--js section" id="sFeedback">
+				<!-- picture-->
+				<picture class="sFeedback__bg"> 
+					<source type="image/webp" srcset="img/@2x/webp/sFeedback-bg.webp"/><img src="img/@2x/sFeedback-bg.png" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Отзывы клиентов на&#160;бланках</h2>
+					</div>
+					<div class="sOpen__slider-wrap">
+						<div class="swiper sFeedback-slider-js">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sOpen__card-wrap">
+										<div class="sOpen__card">
+											<div class="sOpen__img"><img class="swiper-lazy" src="" data-src="img/@2x/sOpen-cert.png" alt=""/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-none d-xl-block">
+								<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+									<svg class="icon icon-arrow-left ">
+										<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!-- end sFeedback-->
+			<!-- start sOrder-->
+			<section class="sOrder section" id="sOrder">
+				<!-- picture-->
+				<picture class="sOrder__bg d-none d-xl-flex"> 
+					<source type="image/webp" srcset="img/@2x/webp/sOrder-pencil.webp"/><img src="img/@2x/sOrder-pencil.png" alt="" loading="lazy"/>
+				</picture>
+				<!-- /picture-->
+				<div class="container">
+					<div class="sOrder__row row">
+						<div class="col-lg-7">
+							<div class="section-title text-center text-lg-start">
+								<h2>
+									Бесплатная
+									<span>консультация и расчет</span>
+									цены по телефону
+								</h2>
+								<p>Мы сделаем любой строительный ППР или&#160;(ППРк) от 15 000 ₽ за 2–3 дня.</p>
+							</div>
+							<div class="sOrder__items">
+								<div class="sOrder__item">
+									<div class="sOrder__i-row row">
+										<div class="col-auto">
+											<div class="sOrder__ball">
+												<svg class="icon icon-check ">
+													<use xlink:href="img/svg/sprite.svg#check"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sOrder__sub-row row">
+												<div class="col-auto">
+													<div class="sOrder__title">Разработка ППР на любой вид работ
+													</div>
+													<div class="sOrder__descr d-none d-sm-block">из 23 категорий и 12 834 видов работ
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 d-sm-none">
+											<div class="sOrder__descr">из 23 категорий и 12 834 видов работ
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__item d-none d-lg-block item-inverse">
+									<div class="sOrder__i-row row">
+										<div class="col-auto">
+											<div class="sOrder__ball">
+												<svg class="icon icon-check ">
+													<use xlink:href="img/svg/sprite.svg#check"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sOrder__sub-row row">
+												<div class="col-auto">
+													<div class="sOrder__title">Цены
+													</div>
+													<div class="sOrder__descr">от 15 000 ₽
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="sOrder__title">Доработки
+													</div>
+													<div class="sOrder__descr">без ограничений
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="sOrder__title">Сроки
+													</div>
+													<div class="sOrder__descr">2–3 дня
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="sOrder__title">Предоплата
+													</div>
+													<div class="sOrder__descr">0 ₽
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__item">
+									<div class="sOrder__i-row row">
+										<div class="col-auto">
+											<div class="sOrder__ball">
+												<svg class="icon icon-check ">
+													<use xlink:href="img/svg/sprite.svg#check"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="col">
+											<div class="sOrder__sub-row row">
+												<div class="col-auto">
+													<div class="sOrder__title">Скидка 15% в день заказа
+													</div>
+													<div class="sOrder__descr d-none d-sm-block">на ваш первый ППР или ППРк
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 d-sm-none">
+											<div class="sOrder__descr">на ваш первый ППР или ППРк
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sOrder__item green-item d-lg-none">
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Цены
+										</div>
+										<div class="sOrder__descr">от 15 000 ₽
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Доработки
+										</div>
+										<div class="sOrder__descr">без ограничений
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Сроки
+										</div>
+										<div class="sOrder__descr">2–3 дня
+										</div>
+									</div>
+								</div>
+								<div class="sOrder__i-row row">
+									<div class="col-auto">
+										<div class="sOrder__ball">
+											<svg class="icon icon-check ">
+												<use xlink:href="img/svg/sprite.svg#check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="col">
+										<div class="sOrder__title">Предоплата
+										</div>
+										<div class="sOrder__descr">0 ₽
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="form-wrap">
+								<form>
+									<div class="form-wrap__box">
+										<div class="text-center">
+											<div class="form-wrap__title">
+												Перезвоним через
+												<span>5–7 минут</span>
+											</div>
+											<div class="form-wrap__sm-txt">Заполните форму:
+											</div>
+										</div>
+										<div class="form-wrap__inputs">
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Какой ППР вам нужен?"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="tell" type="tell" placeholder="На какой телефон перезвонить?"/>
+											</div>
+											<!-- +e.input-wrap-->
+											<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Как вас зовут?"/>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<button class="form-wrap__btn" type="submit">Заказать ппр со скидкой 15%
+										</button>
+									</div>
+									<div class="form-wrap__green-box">
+										<div class="form-wrap__g-row row align-items-center justify-content-center">
+											<div class="form-wrap__g-val col-auto">15%
+											</div>
+											<div class="form-wrap__g-txt col-auto">Скидка на 1-й ППР или ППРк
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sOrder-->
+			<!-- start sContact-->
+			<section class="sContact section" id="sContact">
+				<div class="sContact__map d-none d-md-block"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc5326583a0d0f770f3e89e8147b5939536e33547093787f00f2944799db44a3&amp;width=1080&amp;height=518&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+				<div class="sContact__container container">
+					<div class="sContact__box-wrap">
+						<div class="sContact__box">
+							<h2>Контакты</h2>
+							<div class="sContact__title">Телефон:
+							</div>
+							<a class="sContact__txt sContact__txt--tell" href="tel:+74959713971">+7 (495) 971-39-71
+							</a>
+							<div class="sContact__title">Режим работы:
+							</div>
+							<div class="sContact__txt sContact__txt--shedule"><span>пн–пт: 9:30–19:00</span><span>сб–вс: выходной</span>
+							</div>
+							<div class="sContact__title">Электронная почта:
+							</div>
+							<a class="sContact__txt sContact__txt--mail" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
+							</a>
+							<div class="sContact__title">Адрес офиса:
+							</div>
+							<div class="sContact__txt sContact__txt--address">Москва, Алтуфьевское шоссе, дом 48, корпус 1
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sContact-->
+			<footer class="footer">
+				<div class="container text-center text-md-start">
+					<div class="footer__row row align-items-center">
+						<div class="col-md-auto">
+							<a class="footer__logo" href="#"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
+							</a>
+						</div>
+						<div class="col-md">
+							<div class="footer__txt">Разработка и согласование проектов производственных работ для строительства
+							</div>
+						</div>
+						<div class="col-md-auto">
+							<a class="footer__policy" href="#">Политика конфиденциальности
+							</a>
+						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
 		<!--  start modals-->
 		<div class="modal-win" id="modal-call" style="display: none">
-			<div class="form-wrap">
-				<form>
-					<div class="text-center">
-						<div class="form-wrap__title form-data h3 ttu">Обратный звонок
-						</div>
-						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+			<div class="modal-win__row row">
+				<div class="col-lg-6">
+					<div class="modal-win__title">
+						Рассчитайте стоимость
+						проекта<span>за 1 минуту</span>
 					</div>
-					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше Имя" required="required"/>
+					<p>Выберите вид ППР для любого вида строительных работ, менеджер перзвонит вам для уточнения деталей, покажет реализованыее проекты и рассчитает стоимость.</p>
+					<div class="form-wrap">
+						<form>
+							<div class="form-wrap__inputs">
+								<div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text"/>
+								</div>
+							</div>
+						</form>
 					</div>
-					<!-- +e.input-wrap-->
-					<button class="form-wrap__btn btn" type="submit">
-					</button>
-					<div class="p-5"></div>
-					<div class="p-5"></div>
-					<div class="p-5"></div>
-					<div class="p-5"></div>
-					<div class="p-5"></div>
-					<div class="form-wrap__policy">
-						<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="checkbox" type="checkbox" checked="checked"/><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-						</label>
-					</div>
-				</form>
+				</div>
+				<div class="col-lg"></div>
 			</div>
 		</div>
 		<!-- #modal-call-->

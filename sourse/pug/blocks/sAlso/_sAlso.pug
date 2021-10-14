@@ -1,0 +1,20 @@
+mixin sAlso()
+	// start sAlso
+	+b.SECTION.sAlso.section#sAlso&attributes(attributes)
+		+pic('pin.png')(class="sAlso__bg d-none d-xxl-block")
+		.container
+			+b.section-title.text-center.text-md-start
+				h2 Также разрабатываем:
+			+e.row.row
+				+sAlsoItem(1, 'Проекты организации дорожного движения (ПОДД)')
+				+sAlsoItem(2, 'Проекты организации строительства (ПОС)')
+				+sAlsoItem(3, 'ППР для открытия Ордера ОАТИ (ОАТИ)')
+	// end sAlso
+
+mixin sAlsoItem(imgNum, txt)
+	.col-lg-4
+		+e.item(href="#")
+			+e.i-row.row.align-items-center.flex-nowrap
+				.col-auto
+					+pic(`sAlsoItem-c-${imgNum}.png`)(class="sAlso__img")
+				+e.txt-col.col=txt
