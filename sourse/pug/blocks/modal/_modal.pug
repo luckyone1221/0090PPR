@@ -1,18 +1,88 @@
 mixin modal()
 	//  start modals
-	+b.modal-win(id="modal-call" style="display: none")
-		+e.row.row
-			.col-lg-6
-				+e.title
-					| Рассчитайте стоимость
-					| проекта
-					span за 1 минуту
-				p Выберите вид ППР для любого вида строительных работ, менеджер перзвонит вам для уточнения деталей, покажет реализованыее проекты и рассчитает стоимость.
+	+b.modal-win(id="modal-calc" style="display: none")
+		+e.row.row.gy-4
+			+e.col--title.col-lg-auto.text-center.text-lg-start
+				+e.title-bl
+					+e.title
+						| Рассчитайте стоимость проекта
+						|
+						span за 1 минуту
+					p Выберите вид ППР для любого вида строительных работ, менеджер перзвонит вам для уточнения деталей, покажет реализованыее проекты и рассчитает стоимость.
 				+form-wrap
 					+e.inputs
 						+e.input-wrap
-							+e.INPUT.input()
+							+e.SELECT.input--type.form-select(type="text" name="type")
+								option(value="" selected hidden) Выберите вид ППР
+								option вид ППР 1
+								option вид ППР 2
+								option вид ППР 3
+							img(loading="lazy" src="img/svg/modal-type.svg" alt="")
+						+e.input-wrap
+							+e.INPUT.input--tel.form-control(type="tel" placeholder="номер телефона" name="tel")
+							img(loading="lazy" src="img/svg/modal-tel.svg" alt="")
+						+e.btn--calc(type="submit")
+							img(loading="lazy" src="img/svg/calc.svg" alt="")
+							span Рассчитать стоимость
+					+e.policy
+						| Нажимая на кнопку вы соглашаетесь с
+						|
+						a(href="#") политикой конфиденциальности
 			.col-lg
-	// #modal-call
+				+pic('modal-paper-1.png')(class="modal-win__paper")
+	// #modal-calc
+	+b.modal-win(id="modal-call" style="display: none")
+		+e.row.row.gy-4
+			+e.col--title.col-lg-auto.text-center.text-lg-start
+				+e.title-bl
+					+e.title Мы перезвоним!
+					p Оставьте зявку, мы свяжемся с вами в течении одной минуты и проконсультируем по всем интересующим вопросам.
+				+form-wrap
+					+e.inputs
+						+e.input-wrap
+							+e.INPUT.input--name.form-control(type="tel" placeholder="Ваше имя" name="tel")
+							img(loading="lazy" src="img/svg/modal-user.svg" alt="")
+						+e.input-wrap
+							+e.INPUT.input--tel.form-control(type="tel" placeholder="номер телефона" name="tel")
+							img(loading="lazy" src="img/svg/modal-tel.svg" alt="")
+						+e.btn--leave(type="submit")
+							span оставить заявку
+							span и получить скидку 15% на первый ППР
+					+e.policy
+						| Нажимая на кнопку вы соглашаетесь с
+						|
+						a(href="#") политикой конфиденциальности
+			.col-lg
+				+pic('modal-paper-2.png')(class="modal-win__paper")
+	//
+	+b.modal-win(id="modal-price" style="display: none")
+		+e.row.row.gy-4
+			+e.col--title.col-lg-auto.text-center.text-lg-start
+				+e.title-bl
+					+e.title Узнать стоимость такого ППР
+					p Оставьте зявку, мы свяжемся с вами в течении одной минуты и проконсультируем по всем интересующим вопросам.
+				+form-wrap
+					+e.inputs
+						+e.input-wrap
+							+e.INPUT.input--name.form-control(type="tel" placeholder="Ваше имя" name="tel")
+							img(loading="lazy" src="img/svg/modal-user.svg" alt="")
+						+e.input-wrap
+							+e.INPUT.input--tel.form-control(type="tel" placeholder="номер телефона" name="tel")
+							img(loading="lazy" src="img/svg/modal-tel.svg" alt="")
+						+e.btn--leave(type="submit")
+							span оставить заявку
+							span и получить скидку 15% на первый ППР
+					+e.policy
+						| Нажимая на кнопку вы соглашаетесь с
+						|
+						a(href="#") политикой конфиденциальности
+			.col-lg
+				+pic('modal-paper-3.png')(class="modal-win__paper ")
+	//
+	+b.m-thanks.modal-win(id="modal-thanks" style="display: none")
+		.text-center
+			+e.title Спасибо за заявку!
+			+e.descr Мы свяжемся с вами в течении одного рабочего дня. Также, мы закрепили скидку 15% за вашим номером телефона
+			+e.close-btn.modal-close-js(type="button") Закрыть и перейти на сайт
 	
 	// end modals
