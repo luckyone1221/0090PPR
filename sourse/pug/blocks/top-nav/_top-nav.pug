@@ -27,7 +27,14 @@ mixin top-nav()
 								b Работаем с 2006 года.
 								|
 								| Рейтинг на основании 180 отзывов
-				+topNavInfoItem('location')
+				.col-auto.d-none.d-lg-block
+					+e.ball-row.row.scroll-link(href="#sContact")
+						.col-auto
+							+e.ball
+								img(loading="lazy" src=`img/svg/location.svg` alt="")
+						.col
+							+e.txt Москва, Алтуфьевское ш., д. 48, корп. 1
+				//-+topNavInfoItem('location')
 					| Москва, Алтуфьевское ш., д. 48, корп. 1
 				+topNavInfoItem('clock')
 					| пн–пт: 9:30–19:00
@@ -38,7 +45,7 @@ mixin top-nav()
 					div
 						+e.tell(href="telto:+74959713971") +7 (495) 971-39-71
 				.col-auto.d-none.d-md-block
-					+e.callback-btn(href="#") Обратный звонок
+					+e.callback-btn.link-modal-js(href="#modal-call") Обратный звонок
 				.col-auto.d-md-none.ms-auto
 					+e.wa-btn
 						img(loading="lazy" src="img/svg/wa.svg" alt="")

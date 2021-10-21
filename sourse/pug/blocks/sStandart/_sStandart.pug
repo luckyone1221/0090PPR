@@ -2,6 +2,8 @@ mixin sStandart(data)
 	// start sStandart
 	+b.SECTION.sStandart.section#sStandart&attributes(attributes)
 		+pic('sStandart-bg.png')(class="sStandart__bg d-none d-lg-block")
+		//-+e.bg.d-none.d-lg-block
+			img(src="img/@2x/sStandart-bg.png" alt="")
 		.container
 			+e.row.row
 				.col-lg-7.col-xl-8
@@ -26,7 +28,9 @@ mixin sStandart(data)
 						+e.b-val 56
 						+e.b-light--bot параметров
 						+e.b-txt В зависимости от требуемого вами вида ППР
-			+pic('sStandart-paper.png')(class="sStandart__paper")
+			//-+pic('sStandart-paper.png')(class="sStandart__paper")
+			+e.paper
+				img(src="img/@2x/sStandart-paper.png" alt="")
 	// end sStandart
 
 mixin sStandartItem(title, descr)

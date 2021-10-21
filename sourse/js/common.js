@@ -417,10 +417,7 @@ function eventHandler() {
 		let self = this;
 
 		window.setTimeout(function (){
-			let scriptTag = document.createElement('script');
-			scriptTag.src = self.getAttribute('data-src');
-
-			self.parentElement.appendChild(scriptTag);
+			$(self.parentElement).html($(self).data("src"));
 			self.remove();
 		}, 3500)
 	});

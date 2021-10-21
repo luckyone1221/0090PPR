@@ -31,7 +31,8 @@ mixin topLine()
 					div
 						+e.tell(href="telto:+74959713971") +7 (495) 971-39-71
 				.col-auto.d-none.d-lg-block
-					+e.callback-btn(href="#") Обратный звонок
+					//-+e.callback-btn(href="#") Обратный звонок
+					+e.callback-btn.link-modal-js(href="#modal-call") Обратный звонок
 
 	// end topLine
 
