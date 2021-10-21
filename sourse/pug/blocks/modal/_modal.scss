@@ -49,7 +49,7 @@
 		}
 	}
 	&__title{
-		font-weight: 800;
+		font-weight: 700;
 		line-height: calc(49/40);
 
 		font-size: rem(32);
@@ -205,7 +205,7 @@
 		padding: rem(75) rem(40) !important;
 	}
 	&__title{
-		font-weight: 800;
+		font-weight: 700;
 		font-size: rem(32);
 		@include media-breakpoint-up(lg){
 			font-size: rem(40);

@@ -4,7 +4,7 @@ mixin sCategory(data)
 		+e.PICTURE.bg
 			source(type="image/webp" srcset="img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)")
 			source(type="image/webp" srcset="img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)")
-			img(loading="lazy" src="img/@2x/sCategory-bg.png")
+			img(loading="lazy" src="img/@2x/sCategory-bg.png" alt="")
 		//-+pic('sCategory-pencil.png')(class="sCategory__pic sCategory__pic--pencil")
 		+e.pic--pencil
 			img(src="img/@2x/sCategory-pencil.png" alt="")
@@ -22,13 +22,12 @@ mixin sCategory(data)
 				+sCategoryItem(2, 'Электромонтажные работы')
 				+sCategoryItem(1, 'Кровельные работы')
 				+sCategoryItem(2, 'Электромонтажные работы')
-				+sCategoryItem(2, 'Электромонтажные работы', undefined, 'd-none d-sm-flex')
-				+sCategoryItem(1, 'Кровельные работы', undefined, 'd-none d-sm-flex')
-				+sCategoryItem(2, 'Электромонтажные работы', undefined, 'd-none d-sm-flex')
+				+sCategoryItem(2, 'Электромонтажные работы')
+				+sCategoryItem(1, 'Кровельные работы')
+				+sCategoryItem(2, 'Электромонтажные работы')
 			+e.btn(type="button")
 				+icon('reload')
 				span Смотеть больше категорий ппр
-
 	// end sCategory
 
 mixin sCategoryItem(imgNum,title, price='от 15 000 ₽', addClasses='')

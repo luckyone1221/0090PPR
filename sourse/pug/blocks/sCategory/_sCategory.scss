@@ -127,6 +127,14 @@
 				}
 			}
 		}
+
+		//mob d-none
+		& > *:nth-child(1n + 4){
+			@include media-breakpoint-down(sm){
+				display: none!important;
+			}
+		}
+
 	}
 	&__col{
 		display: flex;

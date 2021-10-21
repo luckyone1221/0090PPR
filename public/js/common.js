@@ -412,6 +412,18 @@ function eventHandler() {
 			clickable: true,
 		},
 	});
+	//
+	$('.make-yandex-lazy-js').each(function (){
+		let self = this;
+
+		window.setTimeout(function (){
+			let scriptTag = document.createElement('script');
+			scriptTag.src = self.getAttribute('data-src');
+
+			self.parentElement.appendChild(scriptTag);
+			self.remove();
+		}, 3500)
+	});
 
 	//end luckyOne Js
 

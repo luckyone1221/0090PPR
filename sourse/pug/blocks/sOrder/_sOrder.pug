@@ -1,6 +1,6 @@
 mixin sOrder(data)
 	// start sOrder
-	+b.SECTION.sOrder.section#sOrder&attributes(attributes)
+	+b.SECTION.sOrder.section&attributes(attributes)
 		if data.pencil
 			+pic('sOrder-pencil.png')(class="sOrder__bg d-none d-xl-flex")
 		.container
@@ -57,7 +57,7 @@ mixin sOrder(data)
 								+e.sm-txt Заполните форму:
 							+e.inputs
 								+input('Какой ППР вам нужен?', 'text')
-								+input('На какой телефон перезвонить?', 'tell')
+								+input('На какой телефон перезвонить?', 'tel')
 								+input('Как вас зовут?', 'text')
 							+e.btn(type="submit") Заказать ппр со скидкой 15%
 						+e.green-box
