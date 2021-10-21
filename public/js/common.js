@@ -421,6 +421,29 @@ function eventHandler() {
 			self.remove();
 		}, 3500)
 	});
+	//.typed-js
+	$('.typed-js').each(function (){
+		let thisStings = [];
+		let dataExist = true;
+		let i = 1;
+		while(dataExist){
+			let txt = this.getAttribute(`data-txt${i}`);
+			if (txt){
+				thisStings.push(txt);
+			}
+			else{
+				dataExist = false;
+			}
+
+			i++;
+		}
+
+		let typed = new Typed(this, {
+			strings: thisStings,
+			typeSpeed: 50,
+			loop: true,
+		});
+	});
 
 	//end luckyOne Js
 
