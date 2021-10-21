@@ -33,12 +33,20 @@
 		}
 	}
 	.section-title{
+		min-height: 93px;
+		@include media-breakpoint-up(md){
+			min-height: 0;
+		}
 		h2{
 			font-size: rem(24);
 			@include media-breakpoint-up(sm){
 				font-size: rem(30);
 			}
 			span{
+				//display: block;
+				//@include media-breakpoint-up(md){
+				//	display: inline;
+				//}
 				color: $primary;
 			}
 		}
