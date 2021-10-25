@@ -2,7 +2,7 @@
 	color: $white;
 
 	padding: var(--tn-pt, 0px) 0 rem(12);
-	--tn-pt: #{rem(4)};
+	--tn-pt: #{rem(15)};
 	@include media-breakpoint-up(sm){
 		padding: var(--tn-pt, 0px) 0;
 		--tn-pt: #{rem(12)};
@@ -180,7 +180,7 @@
 		justify-content: center;
 
 		position: relative;
-		top: rem(-5);
+		//top: rem(-5);
 		@include media-breakpoint-up(sm){
 			top: 0;
 		}

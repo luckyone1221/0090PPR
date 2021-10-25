@@ -15,6 +15,76 @@
 	</head>
 	<body class="main-page" data-bg="01.png">
 		<div class="main-wrapper">
+			<div class="menu-mobile menu-mobile--js d-lg-none">
+				<div class="menu-mobile__inner">
+					<div class="menu-mobile__top-row row align-items-center">
+						<div class="col">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+							</div>
+						</div>
+						<div class="col-auto">
+							<a class="menu-mobile__logo" href="/"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
+							</a>
+						</div>
+						<div class="col text-end">
+							<a class="menu-mobile__wa-btn ms-auto" href="#"><img loading="lazy" src="img/svg/wa.svg" alt=""/>
+							</a>
+						</div>
+					</div>
+					<UL class="menu">
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Выполненые проекты</a></li>
+						<li><a href="#">Калькулятор</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Сертификаты</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</UL>
+					<a class="menu-mobile__callback-btn link-modal-js" href="#modal-call">Обратный звонок
+					</a>
+					<div class="menu-mobile__tell-row row justify-content-between">
+						<div class="col-auto">
+							<a class="menu-mobile__link menu-mobile__link--mail" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
+							</a>
+						</div>
+						<div class="col-auto">
+							<a class="menu-mobile__link menu-mobile__link--tell" href="telto:+74959713971">+7 (495) 971-39-71
+							</a>
+						</div>
+					</div>
+					<div class="menu-mobile__footer">
+						<div class="top-nav__since-row row">
+							<div class="col-auto">
+								<div class="top-nav__flag">4,8
+								</div>
+							</div>
+							<div class="col">
+								<div class="top-nav__stars">
+									<svg class="icon icon-star ">
+										<use xlink:href="img/svg/sprite.svg#star"></use>
+									</svg>
+									<svg class="icon icon-star ">
+										<use xlink:href="img/svg/sprite.svg#star"></use>
+									</svg>
+									<svg class="icon icon-star ">
+										<use xlink:href="img/svg/sprite.svg#star"></use>
+									</svg>
+									<svg class="icon icon-star ">
+										<use xlink:href="img/svg/sprite.svg#star"></use>
+									</svg>
+									<svg class="icon icon-star ">
+										<use xlink:href="img/svg/sprite.svg#star"></use>
+									</svg>
+								</div>
+								<div class="top-nav__s-txt"><b>Работаем с 2006 года.</b>
+									Рейтинг на основании 180 отзывов
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  мобильное меню-->
 			<!-- start header-->
 			<header class="header header--js" id="header">
 				<!-- start top-nav-->
@@ -26,7 +96,7 @@
 									<source srcset="img/svg/logo.svg" media="(min-width:576px)"/><img loading="lazy" src="img/svg/logo-sm.svg" alt=""/>
 								</picture>
 							</div>
-							<div class="col-auto align-self-start">
+							<div class="col-auto align-self-start d-none d-sm-block">
 								<div class="top-nav__since-row row">
 									<div class="col-auto">
 										<div class="top-nav__flag">4,8
@@ -80,8 +150,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="col text-end d-none d-sm-block">
-								<a class="top-nav__mail" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
+							<div class="col text-end">
+								<a class="top-nav__mail d-none d-sm-inline-block" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
 								</a>
 								<div>
 									<a class="top-nav__tell" href="telto:+74959713971">+7 (495) 971-39-71
@@ -141,8 +211,16 @@
 				</div>
 				<div class="fixed-line fixed-line--js">
 					<div class="container-lg">
-						<div class="row align-items-center">
-							<div class="col-lg">
+						<div class="fixed-line__row row align-items-center">
+							<div class="col-auto d-lg-none">
+								<div class="fixed-line__burger toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
+							</div>
+							<div class="col d-lg-none">
+								<a class="fixed-line__logo" href="/"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
+								</a>
+							</div>
+							<div class="col-lg d-none d-lg-block">
 								<div class="menu">
 									<div class="swiper menu-slide-js">
 										<ul class="swiper-wrapper">
@@ -178,13 +256,17 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-auto d-none d-lg-block text-end">
-								<a class="fixed-line__mail" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
+							<div class="col-auto text-end">
+								<a class="fixed-line__mail d-none d-sm-inline-block" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
 								</a>
 								<div>
 									<a class="fixed-line__tell" href="telto:+74959713971">+7 (495) 971-39-71
 									</a>
 								</div>
+							</div>
+							<div class="col-auto d-lg-none">
+								<a class="fixed-line__wa-btn" href="#"><img loading="lazy" src="img/svg/wa.svg" alt=""/>
+								</a>
 							</div>
 							<div class="col-auto d-none d-lg-block">
 								<a class="fixed-line__callback-btn link-modal-js" href="#modal-call">Обратный звонок

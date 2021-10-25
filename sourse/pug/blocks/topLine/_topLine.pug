@@ -14,8 +14,14 @@ mixin topLine()
 						+topLineSlide('Контакты')
 	+b.fixed-line--js
 		.container-lg
-			.row.align-items-center
-				.col-lg
+			+e.row.row.align-items-center
+				.col-auto.d-lg-none
+					+e.burger(class="toggle-menu-mobile--js")
+						span
+				.col.d-lg-none
+					+e.logo(href='/')
+						img(loading="lazy" src="img/svg/logo.svg" alt="")
+				.col-lg.d-none.d-lg-block
 					+b.menu
 						.swiper.menu-slide-js
 							ul.swiper-wrapper
@@ -26,10 +32,13 @@ mixin topLine()
 								+topLineSlide('Сертификаты')
 								+topLineSlide('Новости')
 								+topLineSlide('Контакты')
-				.col-auto.d-none.d-lg-block.text-end
-					+e.mail(href="mailto:mail@orgdoc.ru") mail@orgdoc.ru
+				.col-auto.text-end
+					+e.mail.d-none.d-sm-inline-block(href="mailto:mail@orgdoc.ru") mail@orgdoc.ru
 					div
 						+e.tell(href="telto:+74959713971") +7 (495) 971-39-71
+				.col-auto.d-lg-none
+					+e.wa-btn(href="#")
+						img(loading="lazy" src="img/svg/wa.svg" alt="")
 				.col-auto.d-none.d-lg-block
 					//-+e.callback-btn(href="#") Обратный звонок
 					+e.callback-btn.link-modal-js(href="#modal-call") Обратный звонок
