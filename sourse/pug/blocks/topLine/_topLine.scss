@@ -218,11 +218,21 @@
 	}
 
 	//-
+	&__mail-col{
+		display: flex;
+		flex-direction: column;
+
+		@include media-breakpoint-down(sm){
+			flex-direction: column-reverse;
+		}
+	}
 	&__mail{
 		display: inline-block;
 		font-size: rem(14);
 		line-height: calc(16/14);
-		margin-bottom: rem(7);
+		@include media-breakpoint-up(sm){
+			margin-bottom: rem(7);
+		}
 		text-align: right;
 
 		color: inherit;

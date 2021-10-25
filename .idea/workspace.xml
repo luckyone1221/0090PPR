@@ -8,9 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.scss" afterDir="false" />
     </list>
@@ -97,7 +94,8 @@
       <workItem from="1635093442915" duration="548000" />
       <workItem from="1635154336030" duration="3326000" />
       <workItem from="1635189386005" duration="2781000" />
-      <workItem from="1635192599259" duration="426000" />
+      <workItem from="1635192599259" duration="521000" />
+      <workItem from="1635193213957" duration="115000" />
     </task>
     <servers />
   </component>

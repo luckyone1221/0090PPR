@@ -33,13 +33,13 @@ mixin topLine()
 								+topLineSlide('Сертификаты')
 								+topLineSlide('Новости')
 								+topLineSlide('Контакты')
-				.col-auto.text-end
-					+e.mail.d-none.d-sm-inline-block(href="mailto:mail@orgdoc.ru") mail@orgdoc.ru
+				+e.mail-col.col-auto.text-end
+					+e.mail(href="mailto:mail@orgdoc.ru") mail@orgdoc.ru
 					div
 						+e.tell(href="telto:+74959713971") +7 (495) 971-39-71
 				.col-auto.d-lg-none
 					.row.gx-1
-						.col-auto
+						//-.col-auto
 							+e.wa-btn(href="#")
 								img(loading="lazy" src="img/svg/tell-blue.svg" alt="")
 						.col-auto
