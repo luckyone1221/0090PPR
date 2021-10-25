@@ -104,11 +104,38 @@
 	}
 	&__logo{
 		display: block;
+
 		width: rem(121);
+		@media (min-width: 375px) {
+			margin-left: 4px;
+			margin-right: 12px;
+		}
+		@include media-breakpoint-up(sm){
+			width: rem(152);
+			margin-left: 0;
+			margin-right: 0;
+		}
+		@include media-breakpoint-up(xl){
+			margin-right: 28px;
+		}
 
 		img{
-			width: 100%;
-			height: auto;
+			width: rem(30);
+			margin-right: rem(5);
+			@include media-breakpoint-up(sm){
+				margin-right: rem(7);
+			}
+		}
+		span{
+			font-weight: bold;
+			font-size: rem(13);
+			@include media-breakpoint-up(sm){
+				font-size: rem(15);
+			}
+
+			line-height: 1;
+			text-transform: uppercase;
+			color: $green2;
 		}
 	}
 	&__row{

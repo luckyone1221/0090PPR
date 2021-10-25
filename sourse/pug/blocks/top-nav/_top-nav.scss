@@ -38,7 +38,22 @@
 		}
 
 		img{
-			width: 100%;
+			width: rem(30);
+			margin-right: rem(5);
+			@include media-breakpoint-up(sm){
+				margin-right: rem(7);
+			}
+		}
+		span{
+			font-weight: bold;
+			font-size: rem(13);
+			@include media-breakpoint-up(sm){
+				font-size: rem(15);
+			}
+
+			line-height: 1;
+			text-transform: uppercase;
+			color: $green2;
 		}
 	}
 	&__since-row{

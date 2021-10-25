@@ -46,9 +46,12 @@ mixin top-nav()
 		.container-lg
 			+e.row.row.align-items-center.flex-nowrap
 				.col-auto
-					+e.PICTURE.logo
+					//-+e.PICTURE.logo
 						source(srcset="img/svg/logo.svg"  media="(min-width:576px)")
 						img(loading="lazy" src="img/svg/logo-sm.svg" alt="")
+					+e.logo(href='/')
+						img(loading="lazy" src="img/svg/logo-new.svg" alt="")
+						span С-проджект
 				.col-auto.align-self-start
 					+e.since-row.row
 						.col-auto

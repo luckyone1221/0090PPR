@@ -246,7 +246,7 @@ function eventHandler() {
 			? header.classList.add('fixed')
 			: header.classList.remove('fixed');
 
-		window.scrollY > 1000
+		window.scrollY > header.offsetHeight
 			? fixedHeader.classList.add('active')
 			: fixedHeader.classList.remove('active');
 	}
