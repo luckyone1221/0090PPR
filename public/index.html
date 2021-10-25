@@ -90,13 +90,13 @@
 				<!-- start top-nav-->
 				<div class="top-nav block-with-lazy">
 					<div class="container-lg">
-						<div class="top-nav__row row align-items-center">
+						<div class="top-nav__row row align-items-center flex-nowrap">
 							<div class="col-auto">
 								<picture class="top-nav__logo">
 									<source srcset="img/svg/logo.svg" media="(min-width:576px)"/><img loading="lazy" src="img/svg/logo-sm.svg" alt=""/>
 								</picture>
 							</div>
-							<div class="col-auto align-self-start d-none d-sm-block">
+							<div class="col-auto align-self-start">
 								<div class="top-nav__since-row row">
 									<div class="col-auto">
 										<div class="top-nav__flag">4,8
@@ -150,8 +150,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="col text-end">
-								<a class="top-nav__mail d-none d-sm-inline-block" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
+							<div class="col text-end d-none d-sm-block">
+								<a class="top-nav__mail" href="mailto:mail@orgdoc.ru">mail@orgdoc.ru
 								</a>
 								<div>
 									<a class="top-nav__tell" href="telto:+74959713971">+7 (495) 971-39-71
@@ -163,7 +163,15 @@
 								</a>
 							</div>
 							<div class="col-auto d-md-none ms-auto">
-								<div class="top-nav__wa-btn"><img loading="lazy" src="img/svg/wa.svg" alt=""/>
+								<div class="row gx-1">
+									<div class="col-auto">
+										<a class="top-nav__wa-btn" href="#"><img loading="lazy" src="img/svg/tell-blue.svg" alt=""/>
+										</a>
+									</div>
+									<div class="col-auto">
+										<a class="top-nav__wa-btn" href="#"><img loading="lazy" src="img/svg/wa2.svg" alt=""/>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -211,16 +219,12 @@
 				</div>
 				<div class="fixed-line fixed-line--js">
 					<div class="container-lg">
-						<div class="fixed-line__row row align-items-center">
-							<div class="col-auto d-lg-none">
-								<div class="fixed-line__burger toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-								</div>
-							</div>
+						<div class="fixed-line__row row align-items-center gy-3">
 							<div class="col d-lg-none">
 								<a class="fixed-line__logo" href="/"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
 								</a>
 							</div>
-							<div class="col-lg d-none d-lg-block">
+							<div class="col-lg order-lg-0 order-last">
 								<div class="menu">
 									<div class="swiper menu-slide-js">
 										<ul class="swiper-wrapper">
@@ -265,8 +269,16 @@
 								</div>
 							</div>
 							<div class="col-auto d-lg-none">
-								<a class="fixed-line__wa-btn" href="#"><img loading="lazy" src="img/svg/wa.svg" alt=""/>
-								</a>
+								<div class="row gx-1">
+									<div class="col-auto">
+										<a class="fixed-line__wa-btn" href="#"><img loading="lazy" src="img/svg/tell-blue.svg" alt=""/>
+										</a>
+									</div>
+									<div class="col-auto">
+										<a class="fixed-line__wa-btn" href="#"><img loading="lazy" src="img/svg/wa2.svg" alt=""/>
+										</a>
+									</div>
+								</div>
 							</div>
 							<div class="col-auto d-none d-lg-block">
 								<a class="fixed-line__callback-btn link-modal-js" href="#modal-call">Обратный звонок
