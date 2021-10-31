@@ -89,12 +89,50 @@
 				width: rem(18);
 				height: auto;
 			}
+
+			&:after{
+				@include media-breakpoint-up(sm){
+					content: '';
+				}
+
+				position: absolute;
+				pointer-events: none;
+				z-index: 2;
+				top: 50%;
+				transform: translateY(-50%);
+				left: rem(28);
+
+				width: rem(18);
+				height: rem(18);
+
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+
+			&--tel{
+				&:after{
+					background-image: url(../img/svg/modal-tel.svg);
+				}
+			}
+			&--type{
+				&:after{
+					background-image: url(../img/svg/modal-type.svg);
+				}
+			}
+			&--user{
+				&:after{
+					background-image: url(../img/svg/modal-user.svg);
+				}
+			}
+
+
 		}
 		&__input{
 			border: none;
-			padding: rem(20) rem(18);
+			padding: rem(20) rem(18) !important;
 			@include media-breakpoint-up(sm){
-				padding: rem(23.5) rem(55);
+				padding: rem(23.5) rem(55)!important;
 			}
 
 			@include placeholder(){
@@ -125,12 +163,19 @@
 				text-transform: uppercase;
 
 				padding: rem(25);
-				img{
-					width: rem(24);
-					margin-right: rem(15);
-				}
-				span{
 
+				&:before{
+					flex-shrink: 0;
+					content: '';
+					display: inline-block;
+					width: rem(24);
+					height: rem(24);
+					margin-right: rem(15);
+
+					background-image: url(../img/svg/calc.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: contain;
 				}
 			}
 
@@ -139,6 +184,7 @@
 				span{
 					display: block;
 					&:first-child{
+						text-transform: uppercase;
 						font-weight: 600;
 						font-size: rem(14);
 						line-height: calc(17/14);
@@ -166,6 +212,8 @@
 		}
 		&__{}
 	}
+
+	//-
 	&__paper{
 		@include media-breakpoint-down(lg){
 			max-height: 100%;
@@ -173,6 +221,7 @@
 		}
 		@include media-breakpoint-up(lg){
 			position: absolute;
+			z-index: -1;
 			bottom: 0;
 			right: 0;
 			display: flex;

@@ -129,10 +129,13 @@
 		}
 
 		//mob d-none
-		& > *:nth-child(1n + 4){
+		&:not(.active) > *:nth-child(1n + 4){
 			@include media-breakpoint-down(sm){
 				display: none!important;
 			}
+		}
+		&:not(.active) > *:nth-child(1n + 7){
+			display: none!important;
 		}
 
 	}
@@ -237,6 +240,15 @@
 			font-size: rem(24);
 			margin-right: rem(13.5);
 			color: $white;
+		}
+
+		&:not(.active) .txt{
+			span:first-child{display: inline;}
+			span:last-child{display: none;}
+		}
+		&.active .txt{
+			span:first-child{display: none;}
+			span:last-child{display: inline;}
 		}
 	}
 	&__{}

@@ -40,17 +40,20 @@
 					<div class="form-wrap">
 						<form>
 							<div class="form-wrap__inputs">
-								<div class="form-wrap__input-wrap">
+								<input class="title-js" type="hidden" value="" name="title"/>
+								<input class="price-js" type="hidden" value="" name="price"/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--type">
 									<select class="form-wrap__input form-wrap__input--type form-select" name="type">
 										<option value="" selected="selected" hidden="hidden">Выберите вид ППР</option>
 										<option>вид ППР 1</option>
 										<option>вид ППР 2</option>
 										<option>вид ППР 3</option>
-									</select><img loading="lazy" src="img/svg/modal-type.svg" alt=""/>
+									</select>
 								</div>
-								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/><img loading="lazy" src="img/svg/modal-tel.svg" alt=""/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--tel"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/>
 								</div>
-								<button class="form-wrap__btn form-wrap__btn--calc" type="submit"><img loading="lazy" src="img/svg/calc.svg" alt=""/><span>Рассчитать стоимость</span>
+								<button class="form-wrap__btn form-wrap__btn--calc" type="submit">Рассчитать стоимость
+									<!--img(loading="lazy" src="img/svg/calc.svg" alt="")-->
 								</button>
 							</div>
 							<div class="form-wrap__policy">
@@ -80,10 +83,13 @@
 					</div>
 					<div class="form-wrap">
 						<form>
+							<input class="title-js" type="hidden" value="" name="title"/>
+							<input class="price-js" type="hidden" value="" name="price"/>
 							<div class="form-wrap__inputs">
-								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--name form-control" type="tel" placeholder="Ваше имя" name="tel"/><img loading="lazy" src="img/svg/modal-user.svg" alt=""/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--user"><input class="form-wrap__input form-wrap__input--name form-control" type="text" placeholder="Ваше имя" name="name"/>
 								</div>
-								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/><img loading="lazy" src="img/svg/modal-tel.svg" alt=""/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--tel"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/>
+									<!--/img(loading="lazy" src="img/svg/modal-tel.svg" alt="")-->
 								</div>
 								<button class="form-wrap__btn form-wrap__btn--leave" type="submit"><span>оставить заявку</span><span>и получить скидку 15% на первый ППР</span>
 								</button>
@@ -115,6 +121,8 @@
 					</div>
 					<div class="form-wrap">
 						<form>
+							<input class="title-js" type="hidden" value="" name="title"/>
+							<input class="price-js" type="hidden" value="" name="price"/>
 							<div class="form-wrap__inputs">
 								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--name form-control" type="tel" placeholder="Ваше имя" name="tel"/><img loading="lazy" src="img/svg/modal-user.svg" alt=""/>
 								</div>

@@ -4,8 +4,9 @@ mixin footer()
 			+e.row.row.align-items-center
 				.col-md-auto
 					+e.logo(href="#")
-						img(loading="lazy" src="img/svg/logo.svg" alt="")
+						img(loading="lazy" src="img/svg/logo-new.svg" alt="")
+						span С-проджект
 				.col-md
 					+e.txt Разработка и согласование проектов производственных работ для строительства
-				.col-md-auto
-					+e.policy(href="#") Политика конфиденциальности
+				+e.policy-col.col-md-auto
+					a(href="#") Политика конфиденциальности

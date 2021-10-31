@@ -26,7 +26,7 @@ mixin topLine()
 					+b.menu
 						.swiper.menu-slide-js
 							ul.swiper-wrapper
-								+topLineSlide('Услуги')
+								+topLineSlide('Услуги', '#sOpen')
 								+topLineSlide('Выполненые проекты')
 								+topLineSlide('Калькулятор')
 								+topLineSlide('Отзывы')
@@ -53,4 +53,5 @@ mixin topLine()
 
 mixin topLineSlide(txt, href="#")
 	li.swiper-slide
-		+e.item(href=href)=txt
+		//-+e.item(href=href)=txt
+		a(href=href)=txt

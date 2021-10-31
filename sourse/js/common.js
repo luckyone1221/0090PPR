@@ -70,18 +70,23 @@ const JSCCommon = {
 				element.addEventListener('click', () => {
 					let modal = document.querySelector(element.getAttribute("href"));
 					const data = element.dataset;
+					console.log(data);
 
 					function setValue(val, elem) {
 						if (elem && val) {
-							const el = modal.querySelector(elem)
+							let el = modal.querySelector(elem);
+							if (!el){
+								return
+							}
+
 							el.tagName == "INPUT"
 								? el.value = val
 								: el.innerHTML = val;
-							// console.log(modal.querySelector(elem).tagName)
 						}
 					}
-					setValue(data.title, '.ttu');
-					setValue(data.text, '.after-headline');
+					setValue(data.title, '.title-js');
+					setValue(data.price, '.price-js');
+
 					setValue(data.btn, '.btn');
 					setValue(data.order, '.order');
 				})
@@ -134,47 +139,6 @@ const JSCCommon = {
 			document.body.insertAdjacentHTML("beforeend", '<div class="browsehappy">	<p class=" container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p></div>');
 		}
 	},
-	sendForm() {
-		var gets = (function () {
-			var a = window.location.search;
-			var b = new Object();
-			var c;
-			a = a.substring(1).split("&");
-			for (var i = 0; i < a.length; i++) {
-				c = a[i].split("=");
-				b[c[0]] = c[1];
-			}
-			return b;
-		})();
-		// form
-		$(document).on('submit', "form", function (e) {
-			e.preventDefault();
-			const th = $(this);
-			var data = th.serialize();
-			th.find('.utm_source').val(decodeURIComponent(gets['utm_source'] || ''));
-			th.find('.utm_term').val(decodeURIComponent(gets['utm_term'] || ''));
-			th.find('.utm_medium').val(decodeURIComponent(gets['utm_medium'] || ''));
-			th.find('.utm_campaign').val(decodeURIComponent(gets['utm_campaign'] || ''));
-			$.ajax({
-				url: 'action.php',
-				type: 'POST',
-				data: data,
-			}).done(function (data) {
-
-				Fancybox.close();
-				Fancybox.show([{ src: "#modal-thanks", type: "inline" }]);
-				// window.location.replace("/thanks.html");
-				setTimeout(function () {
-					// Done Functions
-					th.trigger("reset");
-					// $.magnificPopup.close();
-					// ym(53383120, 'reachGoal', 'zakaz');
-					// yaCounter55828534.reachGoal('zakaz');
-				}, 4000);
-			}).fail(function () { });
-
-		});
-	},
 	//pure js
 	heightwindow() {
 		let vh = window.innerHeight * 0.01;
@@ -187,7 +151,7 @@ const JSCCommon = {
 	//pure js
 	animateScroll(topShift=80) {
 		document.addEventListener('click', function (){
-			if (event.target.closest('.menu li a, .scroll-link')) {
+			if (event.target.closest('.swiper li a, .scroll-link')) {
 				let self = event.target.closest('.menu li a, .scroll-link');
 				event.preventDefault();
 
@@ -198,32 +162,26 @@ const JSCCommon = {
 					self.setAttribute("href", '/' + targetSelector);
 				}
 
-				if (headerH){
-					topShift = headerH;
-				}
-				else{
-					event.preventDefault();
-					let targetTop = target.offsetTop;
-					window.scrollTo({
-						top: targetTop - topShift,
-						behavior: "smooth",
-					});
-				}
+				event.preventDefault();
+				let targetTop = target.offsetTop;
+				window.scrollTo({
+					top: targetTop - topShift,
+					behavior: "smooth",
+				});
 			}
 		});
 	},
 };
 const $ = jQuery;
-
+let headerH;
 function eventHandler() {
 	// JSCCommon.ifie();
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	// JSCCommon.inputMask();
-	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
-	// JSCCommon.animateScroll();
+	JSCCommon.animateScroll();
 	
 	// JSCCommon.CustomInputFile(); 
 	var x = window.location.host;
@@ -234,7 +192,6 @@ function eventHandler() {
 	}
 
 	//luckyOne Js
-	let headerH;
 	let header = document.querySelector(".header--js");
 	let fixedHeader = document.querySelector(".fixed-line--js");
 	function calcHeaderHeight() {
@@ -319,6 +276,7 @@ function eventHandler() {
 	makeDDGroup();
 	//
 	let sliders = document.querySelectorAll('.menu-slide-js');
+	console.log(sliders);
 	for (let slider of sliders){
 		let menuSlider = new Swiper(slider, {
 			observer: true,
@@ -444,6 +402,63 @@ function eventHandler() {
 			loop: true,
 		});
 	});
+	$('.sCategory-btn-js').click(function (){
+		$('.sCategory-row-js, .sCategory-btn-js').toggleClass('active');
+	});
+	$('.sForm--js').each(function (){
+		let parent = this;
+		let input = parent.querySelector('.sForm-search-js');
+		let btn = parent.querySelector('.sForm-btn-js');
+		let resultItemsCont = parent.querySelector('.ppr-items-js');
+		let itemsFound = parent.querySelector('.sForm-items-found');
+
+		let priceFrom = resultItemsCont.getAttribute('data-price-from');
+		let btnMute = false;
+
+		$(btn).click(function (){
+			if(btnMute){
+				return
+			}
+			let val = input.value;
+
+			if (val.length > 3){
+				btnMute = true;
+				itemsFound.innerHTML = '1';
+
+				$(resultItemsCont).slideUp(function (){
+					$(this).toggleClass('active');
+
+					let foundItem = `
+					<div class="sForm__item">
+						<div class="sForm__i-row row align-items-center">
+							<div class="sForm__i-title col-md">
+								${val}
+							</div>
+							<div class="sForm__i-price col-md-auto">
+								${priceFrom}
+							</div>
+							<div class="col-md-auto">
+								<a class="sForm__i-btn link-modal-js" href="#modal-price" data-title="${val}" data-price="${priceFrom}">
+									Заказать ППр
+								</a>
+							</div>
+						</div>
+					</div>
+					`;
+					this.innerHTML = foundItem;
+					$(this).slideDown(function (){
+						$(this).addClass('active');
+						btnMute = false;
+					})
+				})
+			}
+			//-
+		});
+
+		//let resultItems = document.querySelectorAll('.result-item-js');
+	});
+	//
+	//
 
 	//end luckyOne Js
 

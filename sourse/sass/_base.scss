@@ -584,3 +584,10 @@ h1,h2{
 		}
 	}
 }
+
+//
+.btn-outline-info{
+	&:hover{
+		color: $white!important;
+	}
+}

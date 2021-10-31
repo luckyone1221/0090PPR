@@ -1,6 +1,6 @@
 mixin sForm()
 	// start sForm
-	+b.SECTION.sForm.section&attributes(attributes)
+	+b.SECTION.sForm--js.section&attributes(attributes)
 		.container
 			+e.box-wrap
 				+e.box
@@ -11,21 +11,21 @@ mixin sForm()
 							span.typed-js(data-txt1="монолитные работы" data-txt2="кровельниe работы" data-txt3="lorem ipsum")
 					+e.search-box
 						+e.input-wrap
-							+e.INPUT.input.form-control(type="text" name="search" placeholder="Введите свой ППР в поиск")
-							+e.btn(type="submit") Найти ППР
+							+e.INPUT.input.form-control.sForm-search-js(type="text" name="search" placeholder="Введите свой ППР в поиск")
+							+e.btn.sForm-btn-js(type="button") Найти ППР
 						+e.result-row.row.d-none.d-md-flex
-							+sFormResultItem('Найдено результатов:', '2')
-							+sFormResultItem('Категорий ППР:', '23')
-							+sFormResultItem('Видов ППР:', '12 834')
+							+sFormResultItem('Найдено результатов:', '2', 'sForm-items-found')
+							//-+sFormResultItem('Категорий ППР:', '23')
+							//-+sFormResultItem('Видов ППР:', '12 834')
 						+e.head-row.row.align-items-center
 							+e.for-col.col-md.text-center.text-md-start ППР для…
 							.col-md-auto.d-none.d-md-block
 								+e.show-more(href="#")
 									+icon('reload')
 									+e.SPAN.sm-txt Показать больше
-						+e.items.text-center.text-md-start
+						+e.items.ppr-items-js.text-center.text-md-start(data-price-from='от 15 000 ₽')
 							+sFormItem('электромонтажных работ')
-							+sFormItem('кровельных работ', 'd-none d-md-block')
+							+sFormItem('кровельных работ')
 						.text-center.d-md-none
 							+e.show-more(href="#")
 								+icon('reload')
@@ -38,9 +38,9 @@ mixin sFormItem(title, addClasses='')
 			+e.i-title.col-md=title
 			+e.i-price.col-md-auto от 15 000 ₽
 			.col-md-auto
-				+e.i-btn(href="#") Заказать ППр
+				+e.i-btn.link-modal-js(href="#modal-price" data-title=title) Заказать ППр
 
-mixin sFormResultItem(key, val)
+mixin sFormResultItem(key, val, valClass='')
 	.col-auto
 		+e.key=key
-		+e.val=val
+		+e.val(class=valClass)=val

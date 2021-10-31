@@ -18,16 +18,21 @@ mixin sCategory(data)
 					span любой
 					|
 					| строительный ППР от 15 000 ₽ и за 2–3 дня.
-			+e.row.row
+			+e.row.row.sCategory-row-js
 				+sCategoryItem(2, 'Электромонтажные работы')
 				+sCategoryItem(1, 'Кровельные работы')
 				+sCategoryItem(2, 'Электромонтажные работы')
 				+sCategoryItem(2, 'Электромонтажные работы')
 				+sCategoryItem(1, 'Кровельные работы')
 				+sCategoryItem(2, 'Электромонтажные работы')
-			+e.btn(type="button")
+				//-
+				+sCategoryItem(2, 'Электромонтажные работы')
+				+sCategoryItem(2, 'Электромонтажные работы')
+			+e.btn.sCategory-btn-js(type="button")
 				+icon('reload')
-				span Смотеть больше категорий ппр
+				span.txt
+					span Смотеть больше категорий ппр
+					span Скрыть категории
 	// end sCategory
 
 mixin sCategoryItem(imgNum,title, price='от 15 000 ₽', addClasses='')
@@ -36,4 +41,4 @@ mixin sCategoryItem(imgNum,title, price='от 15 000 ₽', addClasses='')
 			+pic(`sCategory-${imgNum}.jpg`)(class="sCategory__img")
 			+e.title=title
 			+e.price=price
-			+e.i-btn(href="#") Заказать ППр
+			+e.i-btn.sCategory-item-btn-js.link-modal-js(href="#modal-call" data-title=title data-price=price) Заказать ППр

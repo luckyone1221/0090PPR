@@ -8,8 +8,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCategory/_sCategory.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCategory/_sCategory.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sCategory/_sCategory.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sCategory/_sCategory.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sForm/_sForm.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sForm/_sForm.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sOpen/_sOpen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sOpen/_sOpen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +107,12 @@
       <workItem from="1635154336030" duration="3326000" />
       <workItem from="1635189386005" duration="2781000" />
       <workItem from="1635192599259" duration="521000" />
-      <workItem from="1635193213957" duration="115000" />
+      <workItem from="1635193213957" duration="809000" />
+      <workItem from="1635241224886" duration="35000" />
+      <workItem from="1635518015635" duration="622000" />
+      <workItem from="1635524542766" duration="3724000" />
+      <workItem from="1635603621089" duration="5003000" />
+      <workItem from="1635684888556" duration="14645000" />
     </task>
     <servers />
   </component>

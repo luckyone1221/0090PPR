@@ -7,6 +7,7 @@
 	--sPB: #{rem(73)};
 	--sTPB: #{rem(63)};
 	@include media-breakpoint-up(md){
+		margin-top: -20px;
 		--sPT: #{rem(100)};
 		--sPB: #{rem(94)};
 		--sTPB: #{rem(80)};

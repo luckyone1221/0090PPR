@@ -146,6 +146,10 @@
 		width: rem(138);
 		font-size: rem(12);
 		line-height: calc(14/12);
+
+		span{
+			display: block;
+		}
 	}
 	//-
 	&__mail{
