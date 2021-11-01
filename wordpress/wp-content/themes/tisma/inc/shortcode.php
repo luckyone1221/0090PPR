@@ -1124,13 +1124,7 @@ function sForm_func()
             <h2>
               <?php echo the_field('заголовок016'); ?>
               <span class="typed-js"
-                 <?php
-                  $sec_num = 1;
-
-                  if (have_rows('зеленая_бегущая_строка016')): while (have_rows('зеленая_бегущая_строка016')) : the_row(); ?>
-                    data-txt<?php echo $sec_num;?>="<?php echo get_sub_field('зеленая_строка');?>"
-                    <?php $sec_num++; ?>
-                <?php endwhile; else : endif; ?>
+                    data-text='<?php echo the_field('зеленая_бегущая_строка016'); ?>'
               ></span>
             </h2>
           </div>
@@ -1181,7 +1175,7 @@ function sForm_func()
             <div class="text-center d-md-none">
               <a class="sForm__show-more" href="#">
                 <svg class="icon icon-reload ">
-                  <use xlink:href="img/svg/sprite.svg#reload"></use>
+                  <use xlink:href="<?php echo $get_template_directory_uri ?>/public/img/svg/sprite.svg#reload"></use>
                 </svg><span class="sForm__sm-txt">Показать больше</span>
               </a>
             </div>
@@ -1747,9 +1741,9 @@ function sOpen_func()
                   <div class="swiper-slide">
                     <div class="sOpen__card-wrap">
                       <div class="sOpen__card">
-                        <div class="sOpen__img">
+                        <a class="sOpen__img" data-fancybox="sert" href="<?php echo $image['sizes']['large']; ?>">
                           <img class="swiper-lazy" src="#" data-src="<?php echo $image['sizes']['373']; ?>" alt=""/>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   </div>

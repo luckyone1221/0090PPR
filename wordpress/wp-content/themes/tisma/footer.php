@@ -28,7 +28,8 @@
           </div>
         </div>
         <div class="footer__policy-col col-md-auto">
-          <?php echo the_field('ссилка_политики15', 'option'); ?>
+
+            <a href="<?php echo the_field('ссилка_политики15', 'option'); ?>" target="_blank">Политика конфиденциальности</a>
         </div>
       </div>
     </div>
@@ -72,7 +73,10 @@
           <?php }?>
           <!--end form 1-->
           <div class="form-wrap__policy">
-            <?php echo get_field('политика_модалки', 'option'); ?>
+              Нажимая на кнопку вы соглашаетесь с
+              <a href="<?php echo the_field('ссилка_политики15', 'option'); ?>" target="_blank">
+                  политикой конфиденциальности
+              </a>
           </div>
         </div>
       </div>
@@ -97,9 +101,12 @@
           <?php echo get_field('описание_м2', 'option'); ?>
         </div>
         <div class="form-wrap">
-          <?php echo do_shortcode('[contact-form-7 id="254" title="Модалка2(Мы перезвоним!)"]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="5" title="Модалка1(Рассчитайте стоимость проекта за 1 минуту)"]'); ?>
           <div class="form-wrap__policy">
-            <?php echo get_field('политика_модалки', 'option'); ?>
+              Нажимая на кнопку вы соглашаетесь с
+              <a href="<?php echo the_field('ссилка_политики15', 'option'); ?>" target="_blank">
+                  политикой конфиденциальности
+              </a>
           </div>
         </div>
       </div>
@@ -126,7 +133,10 @@
         <div class="form-wrap">
           <?php echo do_shortcode('[contact-form-7 id="255" title="Модалка3(Узнать стоимость такого ППР)"]'); ?>
           <div class="form-wrap__policy">
-            <?php echo get_field('политика_модалки', 'option'); ?>
+              Нажимая на кнопку вы соглашаетесь с
+              <a href="<?php echo the_field('ссилка_политики15', 'option'); ?>" target="_blank">
+                  политикой конфиденциальности
+              </a>
           </div>
         </div>
       </div>

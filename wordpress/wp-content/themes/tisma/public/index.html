@@ -183,34 +183,13 @@
 						<div class="menu">
 							<div class="swiper menu-slide-js">
 								<ul class="swiper-wrapper">
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Услуги
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Выполненые проекты
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Калькулятор
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Отзывы
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Сертификаты
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Новости
-										</a>
-									</li>
-									<li class="swiper-slide">
-										<a class="menu__item" href="#">Контакты
-										</a>
-									</li>
+									<li class="swiper-slide"><a href="#">Услуги</a></li>
+									<li class="swiper-slide"><a href="#">Выполненые проекты</a></li>
+									<li class="swiper-slide"><a href="#">Калькулятор</a></li>
+									<li class="swiper-slide"><a href="#">Отзывы</a></li>
+									<li class="swiper-slide"><a href="#">Сертификаты</a></li>
+									<li class="swiper-slide"><a href="#">Новости</a></li>
+									<li class="swiper-slide"><a href="#">Контакты</a></li>
 								</ul>
 							</div>
 						</div>
@@ -227,34 +206,13 @@
 								<div class="menu">
 									<div class="swiper menu-slide-js">
 										<ul class="swiper-wrapper">
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Услуги
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Выполненые проекты
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Калькулятор
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Отзывы
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Сертификаты
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Новости
-												</a>
-											</li>
-											<li class="swiper-slide">
-												<a class="menu__item" href="#">Контакты
-												</a>
-											</li>
+											<li class="swiper-slide"><a href="#sOpen">Услуги</a></li>
+											<li class="swiper-slide"><a href="#">Выполненые проекты</a></li>
+											<li class="swiper-slide"><a href="#">Калькулятор</a></li>
+											<li class="swiper-slide"><a href="#">Отзывы</a></li>
+											<li class="swiper-slide"><a href="#">Сертификаты</a></li>
+											<li class="swiper-slide"><a href="#">Новости</a></li>
+											<li class="swiper-slide"><a href="#">Контакты</a></li>
 										</ul>
 									</div>
 								</div>
@@ -380,7 +338,7 @@
 			</section>
 			<!-- end headerBlock-->
 			<!-- start sForm-->
-			<section class="sForm section">
+			<section class="sForm sForm--js section">
 				<div class="container">
 					<div class="sForm__box-wrap">
 						<div class="sForm__box">
@@ -391,27 +349,15 @@
 								</h2>
 							</div>
 							<div class="sForm__search-box">
-								<div class="sForm__input-wrap"><input class="sForm__input form-control" type="text" name="search" placeholder="Введите свой ППР в поиск"/>
-									<button class="sForm__btn" type="submit">Найти ППР
+								<div class="sForm__input-wrap"><input class="sForm__input form-control sForm-search-js" type="text" name="search" placeholder="Введите свой ППР в поиск"/>
+									<button class="sForm__btn sForm-btn-js" type="button">Найти ППР
 									</button>
 								</div>
 								<div class="sForm__result-row row d-none d-md-flex">
 									<div class="col-auto">
 										<div class="sForm__key">Найдено результатов:
 										</div>
-										<div class="sForm__val">2
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="sForm__key">Категорий ППР:
-										</div>
-										<div class="sForm__val">23
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="sForm__key">Видов ППР:
-										</div>
-										<div class="sForm__val">12 834
+										<div class="sForm__val sForm-items-found">2
 										</div>
 									</div>
 								</div>
@@ -426,7 +372,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="sForm__items text-center text-md-start">
+								<div class="sForm__items ppr-items-js text-center text-md-start" data-price-from="от 15 000 ₽">
 									<div class="sForm__item">
 										<div class="sForm__i-row row align-items-center">
 											<div class="sForm__i-title col-md">электромонтажных работ
@@ -434,19 +380,19 @@
 											<div class="sForm__i-price col-md-auto">от 15 000 ₽
 											</div>
 											<div class="col-md-auto">
-												<a class="sForm__i-btn" href="#">Заказать ППр
+												<a class="sForm__i-btn link-modal-js" href="#modal-price" data-title="электромонтажных работ">Заказать ППр
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="sForm__item d-none d-md-block">
+									<div class="sForm__item">
 										<div class="sForm__i-row row align-items-center">
 											<div class="sForm__i-title col-md">кровельных работ
 											</div>
 											<div class="sForm__i-price col-md-auto">от 15 000 ₽
 											</div>
 											<div class="col-md-auto">
-												<a class="sForm__i-btn" href="#">Заказать ППр
+												<a class="sForm__i-btn link-modal-js" href="#modal-price" data-title="кровельных работ">Заказать ППр
 												</a>
 											</div>
 										</div>
@@ -837,7 +783,7 @@
 							строительный ППР от 15 000 ₽ и за 2–3 дня.
 						</p>
 					</div>
-					<div class="sCategory__row row">
+					<div class="sCategory__row row sCategory-row-js">
 						<div class="col-sm-6 col-lg-4 col-xl-3">
 							<div class="sCategory__item">
 								<!-- picture-->
@@ -849,7 +795,7 @@
 								</div>
 								<div class="sCategory__price">от 15 000 ₽
 								</div>
-								<a class="sCategory__i-btn" href="#">Заказать ППр
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Электромонтажные работы" data-price="от 15 000 ₽">Заказать ППр
 								</a>
 							</div>
 						</div>
@@ -864,7 +810,7 @@
 								</div>
 								<div class="sCategory__price">от 15 000 ₽
 								</div>
-								<a class="sCategory__i-btn" href="#">Заказать ППр
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Кровельные работы" data-price="от 15 000 ₽">Заказать ППр
 								</a>
 							</div>
 						</div>
@@ -879,7 +825,7 @@
 								</div>
 								<div class="sCategory__price">от 15 000 ₽
 								</div>
-								<a class="sCategory__i-btn" href="#">Заказать ППр
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Электромонтажные работы" data-price="от 15 000 ₽">Заказать ППр
 								</a>
 							</div>
 						</div>
@@ -894,7 +840,7 @@
 								</div>
 								<div class="sCategory__price">от 15 000 ₽
 								</div>
-								<a class="sCategory__i-btn" href="#">Заказать ППр
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Электромонтажные работы" data-price="от 15 000 ₽">Заказать ППр
 								</a>
 							</div>
 						</div>
@@ -909,7 +855,7 @@
 								</div>
 								<div class="sCategory__price">от 15 000 ₽
 								</div>
-								<a class="sCategory__i-btn" href="#">Заказать ППр
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Кровельные работы" data-price="от 15 000 ₽">Заказать ППр
 								</a>
 							</div>
 						</div>
@@ -924,15 +870,45 @@
 								</div>
 								<div class="sCategory__price">от 15 000 ₽
 								</div>
-								<a class="sCategory__i-btn" href="#">Заказать ППр
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Электромонтажные работы" data-price="от 15 000 ₽">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img">
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-2.webp"/><img src="img/@2x/sCategory-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Электромонтажные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Электромонтажные работы" data-price="от 15 000 ₽">Заказать ППр
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 col-xl-3">
+							<div class="sCategory__item">
+								<!-- picture-->
+								<picture class="sCategory__img">
+									<source type="image/webp" srcset="img/@2x/webp/sCategory-2.webp"/><img src="img/@2x/sCategory-2.jpg" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+								<div class="sCategory__title">Электромонтажные работы
+								</div>
+								<div class="sCategory__price">от 15 000 ₽
+								</div>
+								<a class="sCategory__i-btn sCategory-item-btn-js link-modal-js" href="#modal-call" data-title="Электромонтажные работы" data-price="от 15 000 ₽">Заказать ППр
 								</a>
 							</div>
 						</div>
 					</div>
-					<button class="sCategory__btn" type="button">
+					<button class="sCategory__btn sCategory-btn-js" type="button">
 						<svg class="icon icon-reload ">
 							<use xlink:href="img/svg/sprite.svg#reload"></use>
-						</svg><span>Смотеть больше категорий ппр</span>
+						</svg><span class="txt"><span>Смотеть больше категорий ппр</span><span>Скрыть категории</span></span>
 					</button>
 				</div>
 			</section>
@@ -1520,7 +1496,7 @@
 			<!-- end sDay-->
 			<!--remove d-none if u need another form on mob devide, css is ready-->
 			<!-- start sForm-->
-			<section class="sForm section sForm sForm--alt d-none d-sm-block">
+			<section class="sForm sForm--js section sForm sForm--alt d-none d-sm-block">
 				<div class="container">
 					<div class="sForm__box-wrap">
 						<div class="sForm__box">
@@ -1531,27 +1507,15 @@
 								</h2>
 							</div>
 							<div class="sForm__search-box">
-								<div class="sForm__input-wrap"><input class="sForm__input form-control" type="text" name="search" placeholder="Введите свой ППР в поиск"/>
-									<button class="sForm__btn" type="submit">Найти ППР
+								<div class="sForm__input-wrap"><input class="sForm__input form-control sForm-search-js" type="text" name="search" placeholder="Введите свой ППР в поиск"/>
+									<button class="sForm__btn sForm-btn-js" type="button">Найти ППР
 									</button>
 								</div>
 								<div class="sForm__result-row row d-none d-md-flex">
 									<div class="col-auto">
 										<div class="sForm__key">Найдено результатов:
 										</div>
-										<div class="sForm__val">2
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="sForm__key">Категорий ППР:
-										</div>
-										<div class="sForm__val">23
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="sForm__key">Видов ППР:
-										</div>
-										<div class="sForm__val">12 834
+										<div class="sForm__val sForm-items-found">2
 										</div>
 									</div>
 								</div>
@@ -1566,7 +1530,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="sForm__items text-center text-md-start">
+								<div class="sForm__items ppr-items-js text-center text-md-start" data-price-from="от 15 000 ₽">
 									<div class="sForm__item">
 										<div class="sForm__i-row row align-items-center">
 											<div class="sForm__i-title col-md">электромонтажных работ
@@ -1574,19 +1538,19 @@
 											<div class="sForm__i-price col-md-auto">от 15 000 ₽
 											</div>
 											<div class="col-md-auto">
-												<a class="sForm__i-btn" href="#">Заказать ППр
+												<a class="sForm__i-btn link-modal-js" href="#modal-price" data-title="электромонтажных работ">Заказать ППр
 												</a>
 											</div>
 										</div>
 									</div>
-									<div class="sForm__item d-none d-md-block">
+									<div class="sForm__item">
 										<div class="sForm__i-row row align-items-center">
 											<div class="sForm__i-title col-md">кровельных работ
 											</div>
 											<div class="sForm__i-price col-md-auto">от 15 000 ₽
 											</div>
 											<div class="col-md-auto">
-												<a class="sForm__i-btn" href="#">Заказать ППр
+												<a class="sForm__i-btn link-modal-js" href="#modal-price" data-title="кровельных работ">Заказать ППр
 												</a>
 											</div>
 										</div>
@@ -2005,16 +1969,14 @@
 				<div class="container text-center text-md-start">
 					<div class="footer__row row align-items-center">
 						<div class="col-md-auto">
-							<a class="footer__logo" href="#"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
+							<a class="footer__logo" href="#"><img loading="lazy" src="img/svg/logo-new.svg" alt=""/><span>С-проджект</span>
 							</a>
 						</div>
 						<div class="col-md">
 							<div class="footer__txt">Разработка и согласование проектов производственных работ для строительства
 							</div>
 						</div>
-						<div class="col-md-auto">
-							<a class="footer__policy" href="#">Политика конфиденциальности
-							</a>
+						<div class="footer__policy-col col-md-auto"><a href="#">Политика конфиденциальности</a>
 						</div>
 					</div>
 				</div>
@@ -2034,17 +1996,20 @@
 					<div class="form-wrap">
 						<form>
 							<div class="form-wrap__inputs">
-								<div class="form-wrap__input-wrap">
+								<input class="title-js" type="hidden" value="" name="title"/>
+								<input class="price-js" type="hidden" value="" name="price"/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--type">
 									<select class="form-wrap__input form-wrap__input--type form-select" name="type">
 										<option value="" selected="selected" hidden="hidden">Выберите вид ППР</option>
 										<option>вид ППР 1</option>
 										<option>вид ППР 2</option>
 										<option>вид ППР 3</option>
-									</select><img loading="lazy" src="img/svg/modal-type.svg" alt=""/>
+									</select>
 								</div>
-								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/><img loading="lazy" src="img/svg/modal-tel.svg" alt=""/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--tel"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/>
 								</div>
-								<button class="form-wrap__btn form-wrap__btn--calc" type="submit"><img loading="lazy" src="img/svg/calc.svg" alt=""/><span>Рассчитать стоимость</span>
+								<button class="form-wrap__btn form-wrap__btn--calc" type="submit">Рассчитать стоимость
+									<!--img(loading="lazy" src="img/svg/calc.svg" alt="")-->
 								</button>
 							</div>
 							<div class="form-wrap__policy">
@@ -2074,10 +2039,13 @@
 					</div>
 					<div class="form-wrap">
 						<form>
+							<input class="title-js" type="hidden" value="" name="title"/>
+							<input class="price-js" type="hidden" value="" name="price"/>
 							<div class="form-wrap__inputs">
-								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--name form-control" type="tel" placeholder="Ваше имя" name="tel"/><img loading="lazy" src="img/svg/modal-user.svg" alt=""/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--user"><input class="form-wrap__input form-wrap__input--name form-control" type="text" placeholder="Ваше имя" name="name"/>
 								</div>
-								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/><img loading="lazy" src="img/svg/modal-tel.svg" alt=""/>
+								<div class="form-wrap__input-wrap form-wrap__input-wrap--tel"><input class="form-wrap__input form-wrap__input--tel form-control" type="tel" placeholder="номер телефона" name="tel"/>
+									<!--/img(loading="lazy" src="img/svg/modal-tel.svg" alt="")-->
 								</div>
 								<button class="form-wrap__btn form-wrap__btn--leave" type="submit"><span>оставить заявку</span><span>и получить скидку 15% на первый ППР</span>
 								</button>
@@ -2109,6 +2077,8 @@
 					</div>
 					<div class="form-wrap">
 						<form>
+							<input class="title-js" type="hidden" value="" name="title"/>
+							<input class="price-js" type="hidden" value="" name="price"/>
 							<div class="form-wrap__inputs">
 								<div class="form-wrap__input-wrap"><input class="form-wrap__input form-wrap__input--name form-control" type="tel" placeholder="Ваше имя" name="tel"/><img loading="lazy" src="img/svg/modal-user.svg" alt=""/>
 								</div>
@@ -2146,10 +2116,10 @@
 		</div>
 		<!-- end modals-->
 		<script src="libs/jquery/jquery.min.js"></script>
-		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>//
-		<script src="libs/swiper/swiper-bundle.min.js"> </script>//
-		<script src="libs/inputmask/inputmask.min.js"> </script>//
-		<script src="libs/typed.js/lib/typed.min.js"></script>//
+		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/typed.js/lib/typed.min.js"></script>
 		<script src="js/common.js"></script>
 	</body>
 </html>

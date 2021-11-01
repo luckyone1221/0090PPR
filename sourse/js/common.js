@@ -179,7 +179,7 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	// JSCCommon.inputMask();
+	JSCCommon.inputMask();
 	JSCCommon.heightwindow();
 	JSCCommon.animateScroll();
 	
@@ -381,23 +381,11 @@ function eventHandler() {
 	});
 	//.typed-js
 	$('.typed-js').each(function (){
-		let thisStings = [];
-		let dataExist = true;
-		let i = 1;
-		while(dataExist){
-			let txt = this.getAttribute(`data-txt${i}`);
-			if (txt){
-				thisStings.push(txt);
-			}
-			else{
-				dataExist = false;
-			}
 
-			i++;
-		}
-
+		let thisStings = $(this).data("text");
+		var arrayOfStrings = thisStings.split(', ');
 		let typed = new Typed(this, {
-			strings: thisStings,
+			strings: arrayOfStrings,
 			typeSpeed: 50,
 			loop: true,
 		});
@@ -460,7 +448,15 @@ function eventHandler() {
 	//
 	//
 
-	//end luckyOne Js
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+		Fancybox.close();
+		const fancybox2 = Fancybox.show([
+			{
+				src: "#modal-thanks",
+				type: "inline",
+			},
+		]);
+	}, false );
 
 };
 if (document.readyState !== 'loading') {

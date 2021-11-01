@@ -153,25 +153,25 @@ function tisma_scripts() {
   wp_enqueue_script( 'tisma-slider', $get_template_directory_uri . '/public/libs/swiper/swiper-bundle.min.js', array('jquery'), '20200325', true );
   wp_enqueue_script( 'tisma-typeit', $get_template_directory_uri . '/public/libs/typed.js/lib/typed.min.js', array('jquery'), '20200325', true );
 
-  wp_enqueue_script( 'tisma-libs', $get_template_directory_uri . '/public/libs.js', array('jquery'), '20200325', true );
+//  wp_enqueue_script( 'tisma-libs', $get_template_directory_uri . '/public/libs.js', array('jquery'), '20200325', true );
   wp_enqueue_script( 'tisma-common', $get_template_directory_uri . '/public/js/common.js', array('jquery'), '20151217', true );
 
   //
   wp_enqueue_style( 'tisma-style', get_stylesheet_uri(), array(), _S_VERSION );
   wp_style_add_data( 'tisma-style', 'rtl', 'replace' );
 
-  wp_enqueue_script( 'tisma-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-    wp_enqueue_script( 'comment-reply' );
-  }
+//  wp_enqueue_script( 'tisma-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+//
+//  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+//    wp_enqueue_script( 'comment-reply' );
+//  }
 }
 add_action( 'wp_enqueue_scripts', 'tisma_scripts' );
 
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
