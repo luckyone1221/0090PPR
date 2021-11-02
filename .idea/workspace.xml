@@ -5,45 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d70ea08e-c07e-425b-a897-30268e1319ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/0090PPR.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/languages/plugins/contact-form-7-ru_RU.po" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/languages/plugins/contact-form-7-ru_RU.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/inc/shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/inc/shortcode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/core/loop/loopCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/core/loop/loopCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/core/update/updateSlidesProgress.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/core/update/updateSlidesProgress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/modules/effect-creative/effect-creative.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/modules/effect-creative/effect-creative.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/react/swiper-react.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/react/swiper-react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/svelte/swiper-svelte.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/svelte/swiper-svelte.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.browser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.browser.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/vue/swiper-vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/vue/swiper-vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/modal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +29,42 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="default" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.default" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635792448694</updated>
       <workItem from="1635792452955" duration="7412000" />
+      <workItem from="1635845089775" duration="3920000" />
     </task>
     <servers />
   </component>
@@ -90,16 +85,8 @@
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/wordpress</wordpressPath>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/sourse/js/common.js</url>
-          <line>7</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
