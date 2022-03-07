@@ -552,6 +552,64 @@ h1,h2{
 		border-radius: rem(15);
 	}
 }
+.top-nav__callback-btn,
+.headerBlock__btn,
+.link-modal-js,
+.btn-animate,
+.sForm__btn,
+.sCategory__btn,
+.swiper-button-hand,
+.form-wrap__btn
+{
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	&::before{
+		content: "";
+		display: block;
+		width: 30px;
+		height: 300px;
+		margin-left: 60px;
+		background: #fff;
+		opacity: .5;
+		background: linear-gradient(180deg,hsla(0,0%,100%,.7) 0,#fff 50%,hsla(0,0%,100%,.7));
+		position: absolute;
+		left: -40px;
+		top: -150px;
+		z-index: -1;
+		transform: rotate(45deg);
+		transition: all .6s;
+		animation-name: slideme;
+		animation-duration: 3s;
+		animation-delay: 50ms;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	}
+}
+
+
+
+@keyframes slideme {
+	0% {
+		opacity: 0;
+		left: -130px;
+		margin-left: 0;
+	}
+	15%{
+		opacity: .5;
+	}
+	30% {
+		opacity: 0;
+		/* opacity: 1; */
+		left: 110%;
+		margin-left: 80px;
+	}
+
+	to {
+		left: 110%;
+		margin-left: 80px;
+	}
+}
 
 //
 .btn-white-blue{
@@ -595,4 +653,10 @@ h1,h2{
 
 .wpcf7-response-output{
 	display: none;
+}
+
+.form-wrap__policy{
+	a{
+		display: inline-block;
+	}
 }

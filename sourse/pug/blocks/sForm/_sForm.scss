@@ -38,6 +38,9 @@
 			min-height: 0;
 		}
 		h2{
+			span{
+				margin-left: rem(10);
+			}
 			font-size: rem(24);
 			@include media-breakpoint-up(sm){
 				font-size: rem(30);

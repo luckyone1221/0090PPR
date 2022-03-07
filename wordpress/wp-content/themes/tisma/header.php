@@ -13,17 +13,58 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <title>title</title>
-  <meta name="description" content="о чем страница">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
-  <link type="image/ico" href="img/favicon.ico" rel="shortcut icon">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no,  shrink-to-fit=no">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="format-detection" content="telephone=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
+
+    <!-- Yandex.Metrika counter 2 -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(50042227, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+      });
+
+
+      // setTimeout(() => {
+      //   ym(50042227, 'getClientID', function (clientID) {
+      //     $('[name="form_fields[field_f985c0d]"], [name="form_fields[field_f985c0d]"], .elementor-field-type-hidden input ').each(function () {
+      //       $(this).val(clientID);
+      //       console.log(clientID)
+      //     })
+      //
+      //   }, 1000);
+      //
+      //   $(document).on('click', "a.elementor-button-link", function(){
+      //     let id  = $(this).attr('href')
+      //     setTimeout(() => {
+      //       ym(50042227, 'getClientID', function (clientID) {
+      //         console.log(clientID)
+      //         $('[name="form_fields[field_f985c0d]"], [name="form_fields[field_f985c0d]"], .elementor-field-type-hidden input ').each(function () {
+      //           $(this).val(clientID);
+      //         })
+      //       })
+      //
+      //     }, 500);
+      //
+      //   })
+      // });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50042227" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter 2 -->
 </head>
 <body <?php body_class(); ?>>
 <?php
@@ -115,18 +156,18 @@
               <?php echo $mail;?>
             </a>
             <div>
-              <a class="top-nav__tell" href="<?php echo $tel_href;?>">
+              <a class="top-nav__tell" href="<?php echo $tel_href;?>" onclick="yaCounter50042227.reachGoal('telefon')">
                 <?php echo $tel;?>
               </a>
             </div>
           </div>
           <div class="col-auto d-none d-md-block">
-            <a class="top-nav__callback-btn link-modal-js" href="#modal-call">Обратный звонок</a>
+            <a class="top-nav__callback-btn link-modal-js btn-animate" href="#modal-call">Обратный звонок</a>
           </div>
           <div class="col-auto d-md-none ms-auto">
             <div class="row gx-1">
               <div class="col-auto">
-                <a class="top-nav__wa-btn" href="<?php echo $tel_href;?>">
+                <a class="top-nav__wa-btn" href="<?php echo $tel_href;?>" onclick="yaCounter50042227.reachGoal('telefon')">
                   <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/svg/tell-blue.svg" alt=""/>
                 </a>
               </div>
@@ -174,7 +215,7 @@
               <?php echo $mail;?>
             </a>
             <div>
-              <a class="fixed-line__tell" href="<?php echo $tel_href;?>">
+              <a class="fixed-line__tell" href="<?php echo $tel_href;?>" onclick="yaCounter50042227.reachGoal('telefon')">
                 <?php echo $tel;?>
               </a>
             </div>
@@ -182,7 +223,7 @@
           <div class="col-auto d-lg-none">
             <div class="row gx-1">
               <div class="col-auto">
-                <a class="fixed-line__wa-btn" href="<?php echo $tel_wa_href;?>">
+                <a class="fixed-line__wa-btn btn-animate" href="<?php echo $tel_wa_href;?>">
                   <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/svg/wa2.svg" alt=""/>
                 </a>
               </div>

@@ -5,9 +5,224 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d70ea08e-c07e-425b-a897-30268e1319ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/fb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/viber.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/vk.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sourse/svg/whatsapp.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp/tasks/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/tasks/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sForm/_sForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sForm/_sForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sMade/_sMade.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sMade/_sMade.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sOpen/_sOpen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sOpen/_sOpen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sOrder/_sOrder.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sOrder/_sOrder.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sStandart/_sStandart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sStandart/_sStandart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/topLine/_topLine.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_sprite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_sprite.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/phpMyAdminPass.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/phpMyAdminPass.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/ppr_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/inc/shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/inc/shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/6049001385 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/6049001385 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/headerBlock-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/headerBlock-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/headerBlock-paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/headerBlock-paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/modal-paper-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/modal-paper-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/modal-paper-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/modal-paper-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/modal-paper-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/modal-paper-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/pin.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/pin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-c-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-c-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-c-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-c-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-c-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sAlsoItem-c-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sBaner-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sBaner-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-bg-mob.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-bg-mob.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-img-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-pencil.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sCategory-pencil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sDay-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sDay-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sFeedback-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sFeedback-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sMadeSlide-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sMadeSlide-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sMadeSlide-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sMadeSlide-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sOpen-cert.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sOpen-cert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sOpen-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sOpen-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sOrder-pencil.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sOrder-pencil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sSpec-bg-mob.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sSpec-bg-mob.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sSpec-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sSpec-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sStandart-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sStandart-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sStandart-paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/sStandart-paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/6049001385 1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/6049001385 1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/headerBlock-bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/headerBlock-bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/headerBlock-paper.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/headerBlock-paper.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/modal-paper-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/modal-paper-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/modal-paper-2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/modal-paper-2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/modal-paper-3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/modal-paper-3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/pin.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/pin.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-c-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-c-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-c-2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-c-2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-c-3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sAlsoItem-c-3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sBaner-bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sBaner-bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-bg-mob.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-bg-mob.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-10.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-10.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-11.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-11.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-12.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-12.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-13.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-13.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-14.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-14.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-15.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-15.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-16.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-16.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-17.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-17.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-18.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-18.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-19.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-19.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-20.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-20.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-21.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-21.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-22.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-22.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-23.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-23.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-4.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-5.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-5.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-6.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-6.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-7.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-7.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-8.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-8.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-9.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-img-9.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-paper.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-paper.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-pencil.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sCategory-pencil.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sDay-img.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sDay-img.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sFeedback-bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sFeedback-bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sMadeSlide-1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sMadeSlide-1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sMadeSlide-2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sMadeSlide-2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sOpen-cert.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sOpen-cert.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sOpen-img.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sOpen-img.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sOrder-pencil.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sOrder-pencil.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sSpec-bg-mob.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sSpec-bg-mob.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sSpec-bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sSpec-bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sStandart-bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sStandart-bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sStandart-paper.webp" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@1x/webp/sStandart-paper.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/6049001385 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/6049001385 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/headerBlock-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/headerBlock-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/headerBlock-paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/headerBlock-paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/modal-paper-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/modal-paper-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/modal-paper-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/modal-paper-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/modal-paper-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/modal-paper-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/pin.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/pin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-c-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-c-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-c-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-c-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-c-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sAlsoItem-c-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sBaner-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sBaner-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-bg-mob.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-bg-mob.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-img-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-pencil.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sCategory-pencil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sDay-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sDay-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sFeedback-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sFeedback-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sMadeSlide-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sMadeSlide-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sMadeSlide-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sMadeSlide-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sOpen-cert.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sOpen-cert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sOpen-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sOpen-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sOrder-pencil.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sOrder-pencil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sSpec-bg-mob.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sSpec-bg-mob.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sSpec-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sSpec-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sStandart-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sStandart-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sStandart-paper.png" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/@2x/sStandart-paper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.autoplay.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/carousel.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/fancybox.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.controls.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/@fancyapps/ui/panzoom.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/angular/bundles/swiper_angular.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/angular/bundles/swiper_angular.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/angular/fesm2015/swiper_angular.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/angular/fesm2015/swiper_angular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/core/loop/loopCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/core/loop/loopCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/modules/zoom/zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/modules/zoom/zoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/react/swiper-react.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/react/swiper-react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/svelte/swiper-svelte.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/svelte/swiper-svelte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.browser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.browser.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/vue/swiper-vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/libs/swiper/vue/swiper-vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +254,21 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sourse/svg" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wordpress/wp-content/themes/tisma/public/img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.header.php">
+    <configuration name="header.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/00010PPR/wordpress/wp-content/themes/tisma/header.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="shortcode.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/00010PPR/wordpress/wp-content/themes/tisma/inc/shortcode.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -62,6 +291,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.header.php" />
+        <item itemvalue="JavaScript Debug.shortcode.php" />
         <item itemvalue="Gulp.js.default" />
       </list>
     </recent_temporary>
@@ -76,11 +307,34 @@
       <updated>1635792448694</updated>
       <workItem from="1635792452955" duration="7412000" />
       <workItem from="1635845089775" duration="3920000" />
+      <workItem from="1635858404304" duration="1386000" />
+      <workItem from="1635886479188" duration="677000" />
+      <workItem from="1635926558064" duration="3591000" />
+      <workItem from="1636132103488" duration="8411000" />
+      <workItem from="1636191504806" duration="7836000" />
+      <workItem from="1637149913025" duration="3282000" />
+      <workItem from="1637624212485" duration="869000" />
+      <workItem from="1637671570025" duration="826000" />
+      <workItem from="1637690046697" duration="5828000" />
+      <workItem from="1637754357362" duration="2284000" />
+      <workItem from="1637757833937" duration="1501000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>$PROJECT_DIR$/wordpress</wordpressPath>

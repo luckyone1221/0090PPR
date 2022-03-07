@@ -92,8 +92,9 @@
 			@include media-breakpoint-up(xxl){
 				padding-left: 2px;
 			}
-
+			strong,
 			span{
+				font-weight: inherit;
 				color: $primary;
 			}
 		}

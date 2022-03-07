@@ -280,4 +280,10 @@
 	//
 	&__{}
 	&__{}
+	@include media-breakpoint-down(md){
+		.swiper{
+			max-width: 90%;
+			margin: 0;
+		}
+	}
 } // end.sMade

@@ -105,7 +105,12 @@
 	&__logo{
 		display: block;
 
-		width: rem(121);
+		width: rem(131);
+		white-space: nowrap;
+		span{
+		white-space: nowrap;
+
+		}
 		@media (min-width: 375px) {
 			margin-left: 4px;
 			margin-right: 12px;

@@ -46,9 +46,9 @@ function headerBlock_func()
         <?php endwhile; else : endif; ?>
       </div>
       <div class="text-center text-md-start">
-        <a class="headerBlock__btn link-modal-js" href="#modal-calc">
+        <a class="headerBlock__btn btn-animate link-modal-js" href="#modal-calc">
           <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/svg/calc.svg" alt=""/>
-          <span>Рассчитать стоимость</span>
+          <span>Рассчитать стоимость ППР</span>
         </a>
       </div>
     </div>
@@ -66,11 +66,11 @@ function sForm_func()
   global $get_template_directory_uri, $delay;
   ob_start();
   ?>
-  <section class="sForm sForm--js section">
+  <section class="sForm sForm--js section" id="calc">
     <div class="container">
       <div class="sForm__box-wrap">
         <div class="sForm__box">
-          <div class="section-title text-center text-md-start">
+          <div class="section-title text-center text-md-start wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
             <h2>
               <?php echo the_field('заголовок016'); ?>
               <span class="typed-js"
@@ -80,7 +80,7 @@ function sForm_func()
           </div>
           <div class="sForm__search-box">
             <div class="sForm__input-wrap">
-              <input class="sForm__input form-control sForm-search-js" type="text" name="search" placeholder="Введите свой ППР в поиск" autocomplete="off"/>
+              <input class="sForm__input form-control sForm-search-js" type="text" name="search" placeholder="Введите свой ППР в поиск (более 471 вида ППР)" autocomplete="off"/>
               <button class="sForm__btn sForm-btn-js" type="button">Найти ППР
               </button>
             </div>
@@ -93,37 +93,39 @@ function sForm_func()
                   if (have_rows('результат_по_умолчанию16')): while (have_rows('результат_по_умолчанию16')) : the_row();
                     $default_items_amount++;
                   endwhile; else : endif; ?>
-                <div class="sForm__val sForm-items-found">
-                  <?php echo $default_items_amount;?>
+                <div class="sForm__val sForm-items-found d-none">
+<!--                  --><?php //echo $default_items_amount;?>
+
                 </div>
+
               </div>
             </div>
             <div class="sForm__items ppr-items-js text-center text-md-start" data-price-from="<?php echo the_field('цена_от16'); ?>">
-              <?php if (have_rows('результат_по_умолчанию16')): while (have_rows('результат_по_умолчанию16')) : the_row(); ?>
-                <div class="sForm__item">
-                  <div class="sForm__i-row row align-items-center">
-                    <div class="sForm__i-title col-md">
-                      <?php echo get_sub_field('название');?>
-                    </div>
-                    <div class="sForm__i-price col-md-auto">
-                      <?php echo get_sub_field('цена');?>
-                    </div>
-                    <div class="col-md-auto">
-                      <a
-                        class="sForm__i-btn link-modal-js"
-                        href="#modal-price"
-                        data-title="<?php echo get_sub_field('название');?>"
-                        data-price="<?php echo get_sub_field('цена');?>"
-                      >
-                        Заказать ППр
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              <?php endwhile; else : endif; ?>
+<!--              --><?php //if (have_rows('результат_по_умолчанию16')): while (have_rows('результат_по_умолчанию16')) : the_row(); ?>
+<!--                <div class="sForm__item">-->
+<!--                  <div class="sForm__i-row row align-items-center">-->
+<!--                    <div class="sForm__i-title col-md">-->
+<!--                      --><?php //echo get_sub_field('название');?>
+<!--                    </div>-->
+<!--                    <div class="sForm__i-price col-md-auto">-->
+<!--                      --><?php //echo get_sub_field('цена');?>
+<!--                    </div>-->
+<!--                    <div class="col-md-auto">-->
+<!--                      <a-->
+<!--                        class="sForm__i-btn link-modal-js"-->
+<!--                        href="#modal-price"-->
+<!--                        data-title="--><?php //echo get_sub_field('название');?><!--"-->
+<!--                        data-price="--><?php //echo get_sub_field('цена');?><!--"-->
+<!--                      >-->
+<!--                        Заказать ППр-->
+<!--                      </a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              --><?php //endwhile; else : endif; ?>
             </div>
-            <div class="text-center d-md-none">
-              <a class="sForm__show-more" href="#">
+            <div class="  mt-2 text-center d-none btn-wrap-more">
+              <a class="sForm__show-more link-modal-js" href="#modal-calc">
                 <svg class="icon icon-reload ">
                   <use xlink:href="<?php echo $get_template_directory_uri ?>/public/img/svg/sprite.svg#reload"></use>
                 </svg><span class="sForm__sm-txt">Показать больше</span>
@@ -153,7 +155,7 @@ function sAlso_func()
     </picture>
     <!-- /picture-->
     <div class="container">
-      <div class="section-title text-center text-md-start">
+      <div class="section-title text-center text-md-start wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
         <h2>
           <?php echo the_field('заголовок02'); ?>
         </h2>
@@ -195,7 +197,7 @@ function sMade_func()
   ?>
   <section class="sMade section" id="sMade">
     <div class="container">
-      <div class="section-title text-center">
+      <div class="section-title text-center wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
         <?php echo the_field('заголовок04'); ?>
       </div>
       <div class="sMade__slider-wrap">
@@ -285,7 +287,9 @@ function sCategory_func()
   ?>
   <section class="sCategory section" id="sCategory">
     <picture class="sCategory__bg">
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sCategory-bg.avif" media="(min-width:576px)"/>
       <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)"/>
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sCategory-bg-mob.avif" media="(max-width:576px)"/>
       <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)"/>
       <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sCategory-bg.png" alt=""/>
     </picture>
@@ -299,7 +303,7 @@ function sCategory_func()
     </picture>
     <!-- /picture-->
     <div class="container">
-      <div class="section-title text-center">
+      <div class="section-title text-center wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
         <?php echo the_field('заголовок05'); ?>
       </div>
       <div class="sCategory__row sCategory-row-js row">
@@ -355,11 +359,11 @@ function sOrder_func()
   global $get_template_directory_uri, $delay;
   ob_start();
   ?>
-  <section class="sOrder section">
+  <section class="sOrder section" id="sOrder">
     <div class="container">
       <div class="sOrder__row row">
         <div class="col-lg-7">
-          <div class="section-title text-center text-lg-start">
+          <div class="section-title text-center text-lg-start wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
             <?php echo the_field('заголовок06'); ?>
           </div>
           <div class="sOrder__items">
@@ -453,6 +457,12 @@ function sOrder_func()
                 </div>
               </div>
               <?php echo do_shortcode('[contact-form-7 id="256" title="секция sOrder"]');?>
+                <div class="form-wrap__policy text-center">
+                    Нажимая на кнопку вы соглашаетесь с
+                    <a href="<?php echo the_field('ссилка_политики15', 'option'); ?>" target="_blank">
+                        политикой конфиденциальности
+                    </a>
+                </div>
             </div>
             <div class="form-wrap__green-box">
               <div class="form-wrap__g-row row align-items-center justify-content-center">
@@ -484,12 +494,14 @@ function sSpec_func()
   ?>
   <section class="sSpec section" id="sSpec">
     <picture class="sSpec__bg">
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sSpec-bg.avif" media="(min-width:576px)"/>
       <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sSpec-bg.webp" media="(min-width:576px)"/>
-      <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sSpec-bg-mob.webp" media="(max-width:576px)"/>
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sSpec-bg-mob.avif"  />
+      <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sSpec-bg-mob.webp"  />
       <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sSpec-bg.png" alt=""/>
     </picture>
     <div class="container">
-      <div class="section-title text-center">
+      <div class="section-title text-center wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
         <?php echo the_field('заголовок07'); ?>
       </div>
       <div class="sSpec__slider-wrap">
@@ -549,6 +561,7 @@ function sStandart_func()
   <section class="sStandart section" id="sStandart">
     <!-- picture-->
     <picture class="sStandart__bg d-none d-lg-block">
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sStandart-bg.avif"/>
       <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sStandart-bg.webp"/>
       <img src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sStandart-bg.png" alt="" loading="lazy"/>
     </picture>
@@ -556,7 +569,7 @@ function sStandart_func()
     <div class="container">
       <div class="sStandart__row row">
         <div class="col-lg-7 col-xl-8">
-          <div class="section-title text-center text-lg-start">
+          <div class="section-title text-center text-lg-start wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >
             <?php echo the_field('заголовок08'); ?>
           </div>
           <div class="sStandart__items-row row">
@@ -612,8 +625,11 @@ function sDay_func()
   ?>
   <section class="sDay section" id="sDay">
     <picture class="sDay__bg">
-      <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)"/>
-      <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sCategory-bg-mob.webp" media="(max-width:576px)"/>
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sCategory-bg.avif" media="(min-width:576px)"/>
+        <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sCategory-bg.webp" media="(min-width:576px)"/>
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sCategory-bg-mob.avif" />
+      <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sCategory-bg-mob.webp" />
+
       <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sCategory-bg.png" alt=""/>
     </picture>
     <div class="sDay__img d-none d-xl-block">
@@ -624,7 +640,7 @@ function sDay_func()
         <div class="col-xl-8 ms-auto">
           <div class="sDay__sub-row row">
             <div class="col-md-6">
-              <div class="section-title text-center text-md-start">
+              <div class="section-title text-center text-md-start wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0">
                 <?php echo the_field('заголовок09'); ?>
               </div>
             </div>
@@ -670,53 +686,60 @@ function sOpen_func()
   global $get_template_directory_uri, $delay;
   ob_start();
   ?>
-  <section class="sOpen sOpen--js section" id="sOpen">
+  <section class="sOpen pb-0 section" id="sOpen">
     <div class="sOpen__container container">
+        <div >
       <div class="sOpen__bg d-none d-xl-block">
         <img loading="lazy" src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sOpen-img.png" alt=""/>
       </div>
-      <div class="section-title">
+      <div class="section-title wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0">
         <?php echo the_field('заголовок010'); ?>
       </div>
-      <div class="sOpen__cert-title">
-        <?php echo the_field('заголовок_сертификат010'); ?>
-      </div>
-      <div class="sOpen__slider-wrap">
-        <div class="swiper sOpen-slider-js">
-          <div class="swiper-wrapper">
-            <?php
-              $images = get_field('галерея010');
-              if( $images ): ?>
-                <?php foreach( $images as $image ): ?>
-                  <div class="swiper-slide">
-                    <div class="sOpen__card-wrap">
-                      <div class="sOpen__card">
-                        <a class="sOpen__img" data-fancybox="sert" href="<?php echo $image['sizes']['large']; ?>">
-                          <img class="swiper-lazy" src="#" data-src="<?php echo $image['sizes']['373']; ?>" alt=""/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
-          </div>
-          <div class="d-none d-xl-block">
-            <div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
-              <svg class="icon icon-arrow-left ">
-                <use xlink:href="<?php echo $get_template_directory_uri;?>/public/img/svg/sprite.svg#arrow-left"></use>
-              </svg>
-            </div>
-            <div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
-              <svg class="icon icon-arrow-right ">
-                <use xlink:href="<?php echo $get_template_directory_uri;?>/public/img/svg/sprite.svg#arrow-right"></use>
-              </svg>
-            </div>
-          </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
+
     </div>
   </section>
+    <section class="sOpen section  sOpen--js pt-0" id="sert">
+        <div class="sOpen__container container">
+            <div class="sOpen__cert-title">
+                <?php echo the_field('заголовок_сертификат010'); ?>
+            </div>
+            <div class="sOpen__slider-wrap">
+                <div class="swiper sOpen-slider-js">
+                    <div class="swiper-wrapper">
+                        <?php
+                        $images = get_field('галерея010');
+                        if( $images ): ?>
+                            <?php foreach( $images as $image ): ?>
+                                <div class="swiper-slide">
+                                    <div class="sOpen__card-wrap">
+                                        <div class="sOpen__card">
+                                            <a class="sOpen__img" data-fancybox="serty" href="<?php echo $image['sizes']['large']; ?>">
+                                                <img class="swiper-lazy" src="#" data-src="<?php echo $image['sizes']['373']; ?>" alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="d-none d-xl-block">
+                        <div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+                            <svg class="icon icon-arrow-left ">
+                                <use xlink:href="<?php echo $get_template_directory_uri;?>/public/img/svg/sprite.svg#arrow-left"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+                            <svg class="icon icon-arrow-right ">
+                                <use xlink:href="<?php echo $get_template_directory_uri;?>/public/img/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
   <?php
   return ob_get_clean();
 }
@@ -733,12 +756,13 @@ function sFeedback_func()
   <section class="sFeedback sFeedback--js section" id="sFeedback">
     <!-- picture-->
     <picture class="sFeedback__bg">
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sFeedback-bg.avif"/>
       <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sFeedback-bg.webp"/>
       <img src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sFeedback-bg.png" alt="" loading="lazy"/>
     </picture>
     <!-- /picture-->
     <div class="container">
-      <div class="section-title text-center">
+      <div class="section-title text-center  wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0">
         <?php echo the_field('заголовок11'); ?>
       </div>
       <div class="sOpen__slider-wrap">
@@ -792,6 +816,7 @@ function sOrder2_func()
   <section class="sOrder section">
     <!-- picture-->
     <picture class="sOrder__bg d-none d-xl-flex">
+      <source type="image/avif" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/avif/sOrder-pencil.avif"/>
       <source type="image/webp" srcset="<?php echo $get_template_directory_uri;?>/public/img/@2x/webp/sOrder-pencil.webp"/>
       <img src="<?php echo $get_template_directory_uri;?>/public/img/@2x/sOrder-pencil.png" alt="" loading="lazy"/>
     </picture>
@@ -799,7 +824,7 @@ function sOrder2_func()
     <div class="container">
       <div class="sOrder__row row">
         <div class="col-lg-7">
-          <div class="section-title text-center text-lg-start">
+          <div class="section-title text-center text-lg-start wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0">
             <?php echo the_field('заголовок12'); ?>
           </div>
           <div class="sOrder__items">
@@ -893,6 +918,12 @@ function sOrder2_func()
                 </div>
               </div>
               <?php echo do_shortcode('[contact-form-7 id="256" title="секция sOrder"]');?>
+                <div class="form-wrap__policy text-center">
+                    Нажимая на кнопку вы соглашаетесь с
+                    <a href="<?php echo the_field('ссилка_политики15', 'option'); ?>" target="_blank">
+                        политикой конфиденциальности
+                    </a>
+                </div>
             </div>
             <div class="form-wrap__green-box">
               <div class="form-wrap__g-row row align-items-center justify-content-center">
@@ -930,17 +961,17 @@ function sContact_func()
 
   ?>
   <section class="sContact section" id="sContact">
-    <div class="sContact__map d-none d-md-block">
-      <div class="make-yandex-lazy-js" data-src="<?php echo get_field('скрипт_карты13', 'option'); ?>"></div>
+    <div class="sContact__map d-none d-md-block" data-src='<?php echo get_field('скрипт_карты13', 'option'); ?>'>
+<!--      <div class="make-yandex-lazy-js" ></div>-->
     </div>
     <div class="sContact__container container">
       <div class="sContact__box-wrap">
         <div class="sContact__box">
-          <h2>Контакты</h2>
+          <h2  class="wow animate__slideInLeft" data-wow-duration="0.4s" data-wow-delay="0" >Контакты</h2>
           <div class="sContact__title">
             Телефон:
           </div>
-          <a class="sContact__txt sContact__txt--tell" href="<?php echo $tel_href;?>">
+          <a class="sContact__txt sContact__txt--tell" href="<?php echo $tel_href;?>" onclick="yaCounter50042227.reachGoal('telefon')">
             <?php echo $tel;?>
           </a>
           <div class="sContact__title">Режим работы:

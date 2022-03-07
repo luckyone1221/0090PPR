@@ -49,8 +49,9 @@
 				line-height: calc(70/60);
 				margin-bottom: rem(20);
 			}
-
+			strong,
 			span{
+				font-weight: inherit;
 				color: $primary;
 			}
 		}

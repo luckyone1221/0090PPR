@@ -145,6 +145,7 @@ function tisma_scripts() {
 
   wp_enqueue_style( 'tisma-Popup', $get_template_directory_uri.'/public/libs/@fancyapps/ui/fancybox.css' );
   wp_enqueue_style( 'tisma-slider', $get_template_directory_uri.'/public/libs/swiper/swiper.min.css');
+  wp_enqueue_style( 'tisma-animate', $get_template_directory_uri.'/public/libs/animate.css/animate.min.css');
   wp_enqueue_style( 'tisma-main', $get_template_directory_uri.'/public/css/main.min.css');
   //wp_enqueue_style( 'tisma-main', $get_template_directory_uri.'/public/css/main.min.css');
 
@@ -152,6 +153,7 @@ function tisma_scripts() {
   wp_enqueue_script( 'tisma-Popup', $get_template_directory_uri . '/public/libs/@fancyapps/ui/fancybox.umd.js', array('jquery'), '20200325', true );
   wp_enqueue_script( 'tisma-slider', $get_template_directory_uri . '/public/libs/swiper/swiper-bundle.min.js', array('jquery'), '20200325', true );
   wp_enqueue_script( 'tisma-typeit', $get_template_directory_uri . '/public/libs/typed.js/lib/typed.min.js', array('jquery'), '20200325', true );
+  wp_enqueue_script( 'tisma-wow', $get_template_directory_uri . '/public/libs/wowjs/wow.min.js', array('jquery'), '20200325', true );
 
 //  wp_enqueue_script( 'tisma-libs', $get_template_directory_uri . '/public/libs.js', array('jquery'), '20200325', true );
   wp_enqueue_script( 'tisma-common', $get_template_directory_uri . '/public/js/common.js', array('jquery'), '20151217', true );

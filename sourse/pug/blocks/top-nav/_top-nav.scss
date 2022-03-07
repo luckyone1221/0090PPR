@@ -22,8 +22,11 @@
 	}
 	&__logo{
 		display: block;
+		span{
 
-		width: rem(121);
+		white-space: nowrap;
+		}
+		width: rem(131);
 		@media (min-width: 375px) {
 			margin-left: 4px;
 			margin-right: 12px;
