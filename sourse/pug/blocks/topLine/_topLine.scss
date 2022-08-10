@@ -270,7 +270,7 @@
 
 	&__callback-btn{
 		@extend .btn;
-		@extend .btn-info;
+		@extend .btn-green;
 
 		font-weight: 600;
 		font-size: rem(12);
@@ -280,6 +280,7 @@
 		color: $white!important;
 
 		padding: rem(20);
+		padding-bottom: rem(16);
 
 		@include media-breakpoint-up(xl){
 			width: rem(199);
@@ -288,25 +289,25 @@
 		border: none!important;
 		position: relative;
 		z-index: 1;
-		&:after{
-			@include mt();
-			content: '';
-			position: absolute;
-			z-index: -1;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border-radius: inherit;
-			background: linear-gradient(180deg, #72CBFF 0%, #52A7D8 100%);
-		}
+		// &:after{
+		// 	@include mt();
+		// 	content: '';
+		// 	position: absolute;
+		// 	z-index: -1;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	border-radius: inherit;
+		// 	background: linear-gradient(180deg, #72CBFF 0%, #52A7D8 100%);
+		// }
 
-		&:hover{
-			&:after{
-				//opacity: .7;
-				//background: linear-gradient(180deg, lighten(#72CBFF, 5) 0%, #52A7D8 100%);
-			}
-		}
+		// &:hover{
+		// 	&:after{
+		// 		//opacity: .7;
+		// 		//background: linear-gradient(180deg, lighten(#72CBFF, 5) 0%, #52A7D8 100%);
+		// 	}
+		// }
 	}
 
 	&__wa-btn{
